@@ -80,6 +80,9 @@ function withHeaders(response) {
 }
 async function page(request, env, url) {
   const admin = url.pathname === '/admin/admin' || url.pathname === '/admin/admin/';
+  const path = url.pathname.replace(/\/+$/,'') || '/';
+  const knownPage = ['/', '/productos', '/informacion', '/favoritos', '/carrito'].includes(path) || /^\/producto\/[a-z0-9-]+$/.test(path);
+  if (!admin && !knownPage) return Response.redirect(new URL('/',url),302);
   const assetUrl = new URL(request.url);
   assetUrl.pathname = admin ? '/admin/admin' : '/';
   const asset = await env.ASSETS.fetch(new Request(assetUrl,request));
@@ -102,7 +105,7 @@ async function page(request, env, url) {
       description = product.descripcion || description;
       try { const candidate = new URL(product.imagenes?.[0] || image,url.origin); if (['http:','https:'].includes(candidate.protocol)) image = candidate.href; } catch { /* Use the logo for an invalid image URL. */ }
     }
-  } else if (!['/','/productos','/informacion','/favoritos','/carrito'].includes(url.pathname.replace(/\/+$/,'') || '/')) status = 404;
+  }
   const canonical = `${url.origin}${url.pathname}`;
   html = html.replace(/<title>.*?<\/title>/, `<title>${htmlEscape(title)}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${htmlEscape(description)}">`)

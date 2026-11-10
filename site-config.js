@@ -3,4 +3,6 @@ export const config = {
   whatsapp: '',
   sinpe: '',
   facebook: '',
+  // IDs de YouTube de los dos videos grandes, en orden. Vacío muestra un espacio de "próximamente".
+  youtube: ['', ''],
 };

@@ -8,16 +8,16 @@ const messages = {
     heroLabel:'NATURAL · ARTESANAL · COSTA RICA', heroTitle:'Productos con raíces', heroText:'Descubre productos hechos con cuidado y conoce las historias que los acompañan.', shop:'Explorar productos', featured:'Una selección para ti', featuredText:'Pequeños detalles que nos conectan con la tierra.', all:'Ver todos los productos', storyLabel:'CONOCE YAZÚ', storyTitle:'Una comunidad que florece', storyText:'YaZú visibiliza iniciativas agroecológicas lideradas por mujeres rurales de Costa Rica.', discover:'Conoce más',
     catalogLabel:'EL CATÁLOGO', catalogTitle:'Encuentra algo especial', catalogText:'Explora nuestra selección de productos.', search:'Buscar productos', categories:'Todas las categorías', empty:'Todavía no hay productos para mostrar.', error:'No pudimos cargar el contenido. Inténtalo de nuevo.', retry:'Reintentar', add:'Agregar al carrito', added:'Producto agregado al carrito.', favorite:'Agregar a favoritos', unfavorite:'Quitar de favoritos', back:'Volver a productos', description:'Descripción', noDescription:'', unavailable:'Este producto no está disponible.', image:'Imagen del producto',
     infoLabel:'LA COLECTIVA', infoTitle:'Historias que nos unen', infoText:'Conoce las iniciativas y personas que dan vida a nuestra comunidad.', ventures:'Emprendimientos', services:'Servicios', map:'Mapa', gallery:'Galería', ventureTitle:'Una iniciativa de ejemplo', ventureText:'Este espacio muestra cómo podremos compartir la historia de un emprendimiento y enlazar su página.', pending:'Próximamente compartiremos más información.', location:'Encuéntranos en el mapa', galleryEmpty:'Próximamente compartiremos imágenes de nuestra comunidad.', write:'Escríbenos', sinpe:'SINPE Móvil',
-    favorites:'Favoritos', favoritesText:'Tus productos guardados.', favoritesEmpty:'Aún no tienes favoritos.', cart:'Tu carrito', cartText:'Reúne tus productos para consultar su disponibilidad.', cartEmpty:'Tu carrito está vacío.', quantity:'Cantidad', remove:'Quitar', total:'Total', name:'Nombre', contactField:'Teléfono o correo de contacto', locality:'Localidad', send:'Consultar por WhatsApp', whatsappPending:'WhatsApp estará disponible próximamente.', quote:'Hola, me gustaría consultar la disponibilidad de estos productos:', client:'Nombre', contactInfo:'Contacto', localityInfo:'Localidad',
-    notFound:'No encontramos esta página.', light:'Cambiar tema', language:'Cambiar idioma', showImage:'Mostrar imagen', featuredAlt:'Logo de YaZú', galleryImage:'Imagen de la galería', mapTitle:'Mapa de San José, Costa Rica', skip:'Saltar al contenido', navigation:'Navegación principal', brandLabel:'YaZú, inicio', storageError:'No se pudieron guardar las preferencias en este navegador.',
+    favorites:'Favoritos', favoritesText:'Tus productos guardados.', favoritesEmpty:'Aún no tienes favoritos.', syncTitle:'Tus favoritos en otros dispositivos', syncText:'Tus favoritos se guardan en este dispositivo. Crea una cuenta o inicia sesión para sincronizarlos cuando quieras.', createAccount:'Crear cuenta', signIn:'Iniciar sesión', email:'Correo electrónico', password:'Contraseña', createAccountAction:'Registrarme', signInAction:'Iniciar sesión', syncFavorites:'Sincronizar favoritos', signOut:'Cerrar sesión', signedInAs:'Sesión iniciada como', authWorking:'Procesando…', checkEmail:'Revisa tu correo para confirmar la cuenta.', signedUp:'Cuenta creada. Ya puedes sincronizar tus favoritos.', syncComplete:'Favoritos sincronizados.', syncFailed:'No se pudieron sincronizar los favoritos. Inténtalo de nuevo.', authFailed:'No se pudo completar la solicitud. Revisa los datos e inténtalo de nuevo.', signedOut:'Sesión cerrada. Tus favoritos siguen guardados en este dispositivo.', cart:'Tu carrito', cartText:'Reúne tus productos para consultar su disponibilidad.', cartEmpty:'Tu carrito está vacío.', quantity:'Cantidad', remove:'Quitar', total:'Total', name:'Nombre', contactField:'Teléfono o correo de contacto', locality:'Localidad', send:'Consultar por WhatsApp', whatsappPending:'WhatsApp estará disponible próximamente.', quote:'Hola, me gustaría consultar la disponibilidad de estos productos:', client:'Nombre', contactInfo:'Contacto', localityInfo:'Localidad',
+    notFound:'No encontramos esta página.', light:'Cambiar tema', language:'Cambiar idioma', showImage:'Mostrar imagen', videosLabel:'Videos', videosTitle:'Videos de Chaperno', videosText:'Conozca más sobre Chaperno y nuestras cadenas alimentarias sanas.', videoSoon:'Próximamente', galleryImage:'Imagen de la galería', mapTitle:'Mapa de San José, Costa Rica', skip:'Saltar al contenido', navigation:'Navegación principal', brandLabel:'YaZú, inicio', storageError:'No se pudieron guardar las preferencias en este navegador.',
   },
   en: {
     home:'Home', products:'Products', about:'Our story', contact:'Contact', explore:'Explore', footerText:'Made with roots, care and community.', socials:'Social media', socialPending:'Link pending',
     heroLabel:'NATURAL · HANDMADE · COSTA RICA', heroTitle:'Products with roots', heroText:'Discover carefully made products and the stories behind them.', shop:'Explore products', featured:'A selection for you', featuredText:'Little things that connect us to the earth.', all:'View all products', storyLabel:'MEET YAZÚ', storyTitle:'A community in bloom', storyText:'YaZú brings visibility to agroecological initiatives led by rural women in Costa Rica.', discover:'Learn more',
     catalogLabel:'THE CATALOG', catalogTitle:'Find something special', catalogText:'Explore our selection of products.', search:'Search products', categories:'All categories', empty:'There are no products to show yet.', error:'We could not load the content. Please try again.', retry:'Try again', add:'Add to cart', added:'Added to your cart.', favorite:'Add to favorites', unfavorite:'Remove from favorites', back:'Back to products', description:'Description', noDescription:'', unavailable:'This product is not available.', image:'Product image',
     infoLabel:'THE COLLECTIVE', infoTitle:'Stories that connect us', infoText:'Meet the initiatives and people who bring our community to life.', ventures:'Initiatives', services:'Services', map:'Map', gallery:'Gallery', ventureTitle:'An example initiative', ventureText:'This space shows how we can share an initiative’s story and link to its website.', pending:'More information is coming soon.', location:'Find us on the map', galleryEmpty:'Images of our community are coming soon.', write:'Get in touch', sinpe:'SINPE Móvil',
-    favorites:'Favorites', favoritesText:'Your saved products.', favoritesEmpty:'You have no favorites yet.', cart:'Your cart', cartText:'Gather your products to ask about availability.', cartEmpty:'Your cart is empty.', quantity:'Quantity', remove:'Remove', total:'Total', name:'Name', contactField:'Phone number or email', locality:'Locality', send:'Ask via WhatsApp', whatsappPending:'WhatsApp will be available soon.', quote:'Hello, I would like to ask about the availability of these products:', client:'Name', contactInfo:'Contact', localityInfo:'Locality',
-    notFound:'We could not find this page.', light:'Change theme', language:'Change language', showImage:'Show image', featuredAlt:'YaZú logo', galleryImage:'Gallery image', mapTitle:'Map of San José, Costa Rica', skip:'Skip to content', navigation:'Main navigation', brandLabel:'YaZú, home', storageError:'Could not save your preferences in this browser.',
+    favorites:'Favorites', favoritesText:'Your saved products.', favoritesEmpty:'You have no favorites yet.', syncTitle:'Your favorites on other devices', syncText:'Your favorites are saved on this device. Create an account or sign in to sync them whenever you choose.', createAccount:'Create account', signIn:'Sign in', email:'Email address', password:'Password', createAccountAction:'Create account', signInAction:'Sign in', syncFavorites:'Sync favorites', signOut:'Sign out', signedInAs:'Signed in as', authWorking:'Working…', checkEmail:'Check your email to confirm your account.', signedUp:'Account created. You can now sync your favorites.', syncComplete:'Favorites synced.', syncFailed:'Favorites could not be synced. Please try again.', authFailed:'The request could not be completed. Check your details and try again.', signedOut:'Signed out. Your favorites are still saved on this device.', cart:'Your cart', cartText:'Gather your products to ask about availability.', cartEmpty:'Your cart is empty.', quantity:'Quantity', remove:'Remove', total:'Total', name:'Name', contactField:'Phone number or email', locality:'Locality', send:'Ask via WhatsApp', whatsappPending:'WhatsApp will be available soon.', quote:'Hello, I would like to ask about the availability of these products:', client:'Name', contactInfo:'Contact', localityInfo:'Locality',
+    notFound:'We could not find this page.', light:'Change theme', language:'Change language', showImage:'Show image', videosLabel:'Videos', videosTitle:'Chaperno videos', videosText:'Learn more about Chaperno and our healthy food chains.', videoSoon:'Coming soon', galleryImage:'Gallery image', mapTitle:'Map of San José, Costa Rica', skip:'Skip to content', navigation:'Main navigation', brandLabel:'YaZú, home', storageError:'Could not save your preferences in this browser.',
   }
 };
 
@@ -41,6 +41,9 @@ if (!cart || typeof cart !== 'object' || Array.isArray(cart)) cart = {};
 if (!Array.isArray(favorites)) favorites = [];
 let products = [];
 let gallery = [];
+let authUser = null;
+let authMode = 'signin';
+let authMessage = '';
 let renderId = 0;
 const t = key => messages[language][key] || key;
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -142,7 +145,7 @@ function heading(label, title, text) {
   return `<div class="catalog-head wrap"><p class="eyebrow">${t(label)}</p><h1>${t(title)}</h1><p class="muted">${t(text)}</p></div>`;
 }
 function renderHome() {
-  main.innerHTML = `<section id="inicio" class="hero" data-nav-section="home"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">${t('heroLabel')}</p><h1>${t('heroTitle')}</h1><p>${t('heroText')}</p><a class="button" href="/productos" data-link>${t('shop')} →</a></div><img class="hero-image" src="${logo}" alt="${t('featuredAlt')}"></div></section><section id="catalogo" class="section wrap" data-nav-section="products"><div class="section-heading"><div><p class="eyebrow">${t('catalogLabel')}</p><h2>${t('featured')}</h2></div><p>${t('featuredText')}</p></div><div id="product-results">${skeleton()}</div><p><a class="button secondary" href="/productos" data-link>${t('all')} →</a></p></section>${infoSections(true)}`;
+  main.innerHTML = `<section id="inicio" class="hero" data-nav-section="home"><div class="wrap hero-copy"><p class="eyebrow">${t('heroLabel')}</p><h1>${t('heroTitle')}</h1><p>${t('heroText')}</p><a class="button" href="/productos" data-link>${t('shop')} →</a></div></section><section id="catalogo" class="section wrap" data-nav-section="products"><div class="section-heading"><div><p class="eyebrow">${t('catalogLabel')}</p><h2>${t('featured')}</h2></div><p>${t('featuredText')}</p></div><div id="product-results">${skeleton()}</div><p><a class="button secondary" href="/productos" data-link>${t('all')} →</a></p></section>${infoSections(true)}`;
 }
 function renderCatalog() {
   main.innerHTML = `${heading('catalogLabel','catalogTitle','catalogText')}<section class="wrap section" style="padding-top:0"><div class="controls"><input class="field" id="search" type="search" placeholder="${t('search')}" aria-label="${t('search')}"><select class="field" id="category" aria-label="${t('categories')}"><option value="">${t('categories')}</option></select></div><div id="product-results">${skeleton()}</div></section>`;
@@ -167,9 +170,12 @@ function renderDetail(item) {
   main.innerHTML = `<div class="wrap"><a class="back" href="/productos" data-link>← ${t('back')}</a><section class="detail"><div><div class="detail-image"><img id="detail-image" src="${esc(imageUrl(imgs[0]))}" alt="${esc(local(item,'nombre'))}"></div>${imgs.length>1?`<div class="thumbs">${imgs.map((src,i)=>`<button data-image="${esc(imageUrl(src))}" aria-label="${t('showImage')} ${i+1}"><img src="${esc(imageUrl(src))}" alt=""></button>`).join('')}</div>`:''}</div><div><p class="eyebrow">${esc(local(item,'categoria'))}</p><h1>${esc(local(item,'nombre'))}</h1><p class="price">${price(item.precio)}</p><p>${esc(local(item,'descripcion'))}</p><div class="detail-actions"><button class="button" data-add="${esc(item.uuid)}">${t('add')}</button><button class="button secondary" data-favorite="${esc(item.uuid)}">${t(favorites.includes(item.uuid)?'unfavorite':'favorite')} ${favorites.includes(item.uuid)?'♥':'♡'}</button></div></div></section></div>`;
   document.title = `${local(item,'nombre')} | YaZú`;
 }
+function videoSlot(id) {
+  return id ? `<figure class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}" title="${t('videosTitle')}" loading="lazy" allowfullscreen></iframe></figure>` : `<figure class="video-frame video-soon"><div><img src="${logo}" alt=""><p>${t('videoSoon')}</p></div></figure>`;
+}
 function infoSections(includeIntro = false) {
   const intro = includeIntro ? `<section id="historia" class="section history-intro" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('infoLabel')}</p><h2>${t('infoTitle')}</h2><p>${t('infoText')}</p></div></section>` : '';
-  return `${intro}<div class="wrap info-nav"><a href="#emprendimientos">${t('ventures')}</a><a href="#servicios">${t('services')}</a><a href="#mapa">${t('map')}</a><a href="#galeria">${t('gallery')}</a><a href="#contacto">${t('contact')}</a></div><section id="emprendimientos" class="section soft" data-nav-section="history"><div class="wrap feature"><div class="placeholder"><img src="${logo}" alt=""></div><div><p class="eyebrow">${t('ventures')}</p><h2>${t('ventureTitle')}</h2><p>${t('ventureText')}</p></div></div></section><section id="servicios" class="section wrap" data-nav-section="history"><p class="eyebrow">${t('services')}</p><h2>${t('services')}</h2><p>${t('pending')}</p></section><section id="mapa" class="section soft" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('map')}</p><h2>${t('location')}</h2><iframe class="map" title="${t('mapTitle')}" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.12%2C9.90%2C-84.06%2C9.96&amp;layer=mapnik&amp;marker=9.9281%2C-84.0907"></iframe><p><a href="https://www.openstreetmap.org/?mlat=9.9281&amp;mlon=-84.0907#map=13/9.9281/-84.0907" target="_blank" rel="noopener noreferrer">OpenStreetMap ↗</a></p></div></section><section id="galeria" class="section wrap" data-nav-section="history"><p class="eyebrow">${t('gallery')}</p><h2>${t('gallery')}</h2><div id="gallery-results">${skeleton()}</div></section><section id="contacto" class="section soft" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('contact')}</p><h2>${t('write')}</h2><p><a href="mailto:ecomonzu@gmail.com">ecomonzu@gmail.com</a></p><p><a href="https://www.instagram.com/chapernoagroeco/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>${config.facebook ? ` · <a href="${esc(imageUrl(config.facebook))}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>` : ''}</p>${config.sinpe ? `<p>${t('sinpe')}: ${esc(config.sinpe)}</p>` : ''}</div></section>`;
+  return `${intro}<div class="wrap info-nav"><a href="#emprendimientos">${t('ventures')}</a><a href="#servicios">${t('services')}</a><a href="#mapa">${t('map')}</a><a href="#galeria">${t('gallery')}</a>  <a href="#contacto">${t('contact')}</a></div><section id="videos" class="section wrap" data-nav-section="history"><p class="eyebrow">${t('videosLabel')}</p><h2>${t('videosTitle')}</h2><p class="muted">${t('videosText')}</p><div class="video-grid"><figure class="video-frame"><video controls preload="metadata" playsinline src="/assets/videos/chaperno.mp4" title="${t('videosTitle')}"></video></figure>${videoSlot(config.youtube?.[0])}${videoSlot(config.youtube?.[1])}</div></section><section id="emprendimientos" class="section fondo fondo-1" data-nav-section="history"><div class="wrap feature"><img class="feature-photo" src="/assets/decorativas/foto-1.jpg" alt=""><div><p class="eyebrow">${t('ventures')}</p><h2>${t('ventureTitle')}</h2><p>${t('ventureText')}</p></div></div></section><section id="servicios" class="section wrap fondo fondo-2" data-nav-section="history"><p class="eyebrow">${t('services')}</p><h2>${t('services')}</h2><p>${t('pending')}</p></section><section id="mapa" class="section soft" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('map')}</p><h2>${t('location')}</h2><iframe class="map" title="${t('mapTitle')}" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.12%2C9.90%2C-84.06%2C9.96&amp;layer=mapnik&amp;marker=9.9281%2C-84.0907"></iframe><p><a href="https://www.openstreetmap.org/?mlat=9.9281&amp;mlon=-84.0907#map=13/9.9281/-84.0907" target="_blank" rel="noopener noreferrer">OpenStreetMap ↗</a></p></div></section><section id="galeria" class="section wrap" data-nav-section="history"><p class="eyebrow">${t('gallery')}</p><h2>${t('gallery')}</h2><div class="photo-strip"><img src="/assets/decorativas/foto-2.jpg" alt=""><img src="/assets/decorativas/foto-3.jpg" alt=""></div><div id="gallery-results">${skeleton()}</div></section><section id="contacto" class="section fondo fondo-3" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('contact')}</p><h2>${t('write')}</h2><p><a href="mailto:ecomonzu@gmail.com">ecomonzu@gmail.com</a></p><p><a href="https://www.instagram.com/chapernoagroeco/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>${config.facebook ? ` · <a href="${esc(imageUrl(config.facebook))}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>` : ''}</p>${config.sinpe ? `<p>${t('sinpe')}: ${esc(config.sinpe)}</p>` : ''}</div></section>`;
 }
 function renderInfo() {
   main.innerHTML = `${heading('infoLabel','infoTitle','infoText')}${infoSections()}`;
@@ -180,17 +186,81 @@ function renderGallery() {
   if (!target) return;
   target.innerHTML = gallery.length ? `<div class="gallery-grid">${gallery.map(item=>`<figure><img src="${esc(imageUrl(item.imagen_url))}" alt="${esc(item.titulo || t('galleryImage'))}"><figcaption>${esc(item.titulo || '')}</figcaption></figure>`).join('')}</div>` : `<div class="placeholder"><div><img src="${logo}" alt=""><p>${t('galleryEmpty')}</p></div></div>`;
 }
+function favoritesSyncPanel() {
+  if (authUser) return `<section class="favorite-sync" aria-labelledby="favorite-sync-title"><div><h2 id="favorite-sync-title">${t('syncTitle')}</h2><p>${t('signedInAs')} <strong>${esc(authUser.email || '')}</strong></p></div><div class="favorite-sync-actions"><button class="button" type="button" data-favorites-sync>${t('syncFavorites')}</button><button class="button secondary" type="button" data-auth-signout>${t('signOut')}</button></div><p class="favorite-sync-message" id="favorite-sync-message" role="status">${esc(authMessage)}</p></section>`;
+  return `<section class="favorite-sync" aria-labelledby="favorite-sync-title"><div><h2 id="favorite-sync-title">${t('syncTitle')}</h2><p>${t('syncText')}</p></div><div class="auth-mode" role="group" aria-label="${t('syncTitle')}"><button type="button" data-auth-mode="signup" aria-pressed="${authMode === 'signup'}">${t('createAccount')}</button><button type="button" data-auth-mode="signin" aria-pressed="${authMode === 'signin'}">${t('signIn')}</button></div><form class="favorite-auth-form" id="favorite-auth-form"><label>${t('email')}<input class="field" type="email" name="email" autocomplete="email" required maxlength="254"></label><label>${t('password')}<input class="field" type="password" name="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" required minlength="6"></label><button class="button" type="submit">${t(authMode === 'signup' ? 'createAccountAction' : 'signInAction')}</button><p class="favorite-sync-message" id="favorite-sync-message" role="status">${esc(authMessage)}</p></form></section>`;
+}
 function renderList(kind) {
   const isCart = kind === 'cart';
   const items = products.filter(p => isCart ? Number(cart[p.uuid]) > 0 : favorites.includes(p.uuid));
   const rows = items.map(p => `<article class="list-item"><a href="${link(p)}" data-link><img src="${esc(productImage(p))}" alt="${esc(local(p,'nombre'))}"></a><div><h3><a href="${link(p)}" data-link>${esc(local(p,'nombre'))}</a></h3><span class="price">${price(p.precio)}</span></div><div class="list-actions">${isCart?`<label class="quantity">${t('quantity')} <input class="field" type="number" min="1" max="999" value="${Number(cart[p.uuid])}" data-quantity="${esc(p.uuid)}"></label><button class="text-button" data-remove="${esc(p.uuid)}">${t('remove')}</button>`:`<button class="text-button" data-favorite="${esc(p.uuid)}">${t('unfavorite')}</button>`}</div></article>`).join('');
   const total = totalPrice(items);
   const enabled = /^\d{8,15}$/.test(config.whatsapp);
-  main.innerHTML = `${heading('catalogLabel',isCart?'cart':'favorites',isCart?'cartText':'favoritesText')}<div class="wrap section" style="padding-top:0"><div class="${isCart && items.length?'checkout':''}"><div class="list">${rows || `<div class="empty">${t(isCart?'cartEmpty':'favoritesEmpty')}</div>`}</div>${isCart && items.length?`<form class="summary" id="checkout"><div class="total"><strong>${t('total')}</strong><strong>${price(total)}</strong></div><label>${t('name')}<input class="field" name="name" required maxlength="120"></label><label>${t('contactField')}<input class="field" name="contact" required maxlength="150"></label><label>${t('locality')}<input class="field" name="locality" required maxlength="150"></label><button class="button" type="submit" ${enabled?'':'disabled'}>${t('send')}</button>${enabled?'':`<p class="muted">${t('whatsappPending')}</p>`}</form>`:''}</div></div>`;
+  main.innerHTML = `${heading('catalogLabel',isCart?'cart':'favorites',isCart?'cartText':'favoritesText')}<div class="wrap section" style="padding-top:0">${isCart?'':favoritesSyncPanel()}<div class="${isCart && items.length?'checkout':''}"><div class="list">${rows || `<div class="empty">${t(isCart?'cartEmpty':'favoritesEmpty')}</div>`}</div>${isCart && items.length?`<form class="summary" id="checkout"><div class="total"><strong>${t('total')}</strong><strong>${price(total)}</strong></div><label>${t('name')}<input class="field" name="name" required maxlength="120"></label><label>${t('contactField')}<input class="field" name="contact" required maxlength="150"></label><label>${t('locality')}<input class="field" name="locality" required maxlength="150"></label><button class="button" type="submit" ${enabled?'':'disabled'}>${t('send')}</button>${enabled?'':`<p class="muted">${t('whatsappPending')}</p>`}</form>`:''}</div></div>`;
+}
+function readSyncedFavorites(userId) {
+  const state = storage.get('favoritesSyncState', {});
+  return Array.isArray(state?.[userId]) ? state[userId] : null;
+}
+function saveSyncedFavorites(userId, ids) {
+  const state = storage.get('favoritesSyncState', {});
+  state[userId] = ids;
+  storage.set('favoritesSyncState', state);
+}
+async function syncFavorites() {
+  authMessage = t('authWorking');
+  renderList('favorites');
+  try {
+    const userId = authUser.id;
+    const {data, error} = await supabase.from('favoritos_usuario').select('product_ids').eq('user_id', userId).maybeSingle();
+    if (error) throw error;
+    const remoteIds = Array.isArray(data?.product_ids) ? data.product_ids : [];
+    const previousIds = readSyncedFavorites(userId);
+    const allIds = new Set([...favorites, ...remoteIds, ...(previousIds || [])]);
+    const merged = [...allIds].filter(id => {
+      if (!previousIds) return favorites.includes(id) || remoteIds.includes(id);
+      const base = previousIds.includes(id);
+      const local = favorites.includes(id);
+      const remote = remoteIds.includes(id);
+      const localChanged = local !== base;
+      const remoteChanged = remote !== base;
+      if (localChanged && !remoteChanged) return local;
+      if (remoteChanged && !localChanged) return remote;
+      if (localChanged && remoteChanged) return local;
+      return base;
+    });
+    const {error: saveError} = await supabase.from('favoritos_usuario').upsert({user_id:userId, product_ids:merged}, {onConflict:'user_id'});
+    if (saveError) throw saveError;
+    favorites = merged;
+    storage.set('favorites', favorites);
+    saveSyncedFavorites(userId, merged);
+    updateHeader();
+    authMessage = t('syncComplete');
+  } catch (error) {
+    console.error('Error al sincronizar favoritos:', error);
+    authMessage = t('syncFailed');
+  }
+  renderList('favorites');
+}
+function initializeAuth() {
+  supabase.auth.onAuthStateChange((_event, session) => {
+    authUser = session?.user || null;
+    if (location.pathname === '/favoritos' && products.length) renderList('favorites');
+  });
+  supabase.auth.getSession().then(({data, error}) => {
+    if (error) throw error;
+    authUser = data.session?.user || null;
+    if (location.pathname === '/favoritos' && products.length) renderList('favorites');
+  }).catch(error => console.error('No se pudo recuperar la sesión:', error));
 }
 async function render() {
   const id = ++renderId;
-  const path = location.pathname.replace(/\/+$/, '') || '/';
+  let path = location.pathname.replace(/\/+$/, '') || '/';
+  const knownPage = ['/', '/productos', '/informacion', '/favoritos', '/carrito'].includes(path) || /^\/producto\/[a-z0-9-]+$/.test(path);
+  if (!knownPage) {
+    history.replaceState({}, '', '/');
+    path = '/';
+  }
   updateHeader(); document.title = 'YaZú | Productos con raíces';
   setActiveNavigation(path === '/productos' || path.startsWith('/producto/') ? 'products' : path === '/informacion' ? 'history' : 'home');
   if (path === '/informacion') {
@@ -260,6 +330,16 @@ document.addEventListener('click', event => {
     else if (location.pathname.startsWith('/producto/')) renderDetail(products.find(p=>p.slug===decodeURIComponent(location.pathname.slice(10))));
     else updateCatalog();
   }
+  const authModeButton = event.target.closest('[data-auth-mode]');
+  if (authModeButton) { authMode = authModeButton.dataset.authMode; authMessage = ''; renderList('favorites'); }
+  if (event.target.closest('[data-favorites-sync]')) syncFavorites();
+  if (event.target.closest('[data-auth-signout]')) {
+    supabase.auth.signOut().then(({error}) => {
+      if (error) throw error;
+      authMessage = t('signedOut');
+      renderList('favorites');
+    }).catch(error => { console.error('Error al cerrar sesión:', error); authMessage = t('authFailed'); renderList('favorites'); });
+  }
   const add = event.target.closest('[data-add]');
   if (add) { cart[add.dataset.add] = Math.min(999, (Number(cart[add.dataset.add]) || 0) + 1); storage.set('cart',cart); updateHeader(); notify(t('added')); }
   const remove = event.target.closest('[data-remove]');
@@ -280,6 +360,28 @@ document.addEventListener('change', event => {
   }
 });
 document.addEventListener('submit', event => {
+  if (event.target.id === 'favorite-auth-form') {
+    event.preventDefault();
+    const form = new FormData(event.target);
+    const email = String(form.get('email')).trim();
+    const password = String(form.get('password'));
+    const submit = event.target.querySelector('[type="submit"]');
+    submit.disabled = true;
+    authMessage = t('authWorking');
+    const request = authMode === 'signup'
+      ? supabase.auth.signUp({email, password})
+      : supabase.auth.signInWithPassword({email, password});
+    request.then(({data, error}) => {
+      if (error) throw error;
+      authMessage = authMode === 'signup' ? (data.session ? t('signedUp') : t('checkEmail')) : t('signedUp');
+      if (location.pathname === '/favoritos') renderList('favorites');
+    }).catch(error => {
+      console.error('Error de autenticación:', error);
+      authMessage = t('authFailed');
+      if (location.pathname === '/favoritos') renderList('favorites');
+    }).finally(() => { if (location.pathname === '/favoritos') renderList('favorites'); });
+    return;
+  }
   if (event.target.id !== 'checkout') return;
   event.preventDefault();
   if (!/^\d{8,15}$/.test(config.whatsapp)) { notify(t('whatsappPending')); return; }
@@ -299,4 +401,4 @@ document.querySelector('#language').addEventListener('click', () => { language =
 document.querySelector('#theme').addEventListener('click', () => { theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; storage.set('theme',theme); setTheme(); });
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (!theme) setTheme(); });
 window.addEventListener('popstate', render);
-setTheme(); render();
+initializeAuth(); setTheme(); render();

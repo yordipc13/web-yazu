@@ -14,6 +14,14 @@ const files = [
   [['Guía','admin','admin.js'], ['admin','admin.js']],
   [['assets','logo_yazu.svg'], ['assets','logo_yazu.svg']],
   [['assets','logo_yazu.png'], ['assets','logo_yazu.png']],
+  [['assets','decorativas','inicio.jpg'], ['assets','decorativas','inicio.jpg']],
+  [['assets','decorativas','foto-1.jpg'], ['assets','decorativas','foto-1.jpg']],
+  [['assets','decorativas','foto-2.jpg'], ['assets','decorativas','foto-2.jpg']],
+  [['assets','decorativas','foto-3.jpg'], ['assets','decorativas','foto-3.jpg']],
+  [['assets','fondos','fondo-1.png'], ['assets','fondos','fondo-1.png']],
+  [['assets','fondos','fondo-2.png'], ['assets','fondos','fondo-2.png']],
+  [['assets','fondos','fondo-3.png'], ['assets','fondos','fondo-3.png']],
+  [['assets','videos','chaperno.mp4'], ['assets','videos','chaperno.mp4']],
 ];
 const allowed = new Set(files.map(([, destination]) => path.join(...destination)));
 await mkdir(output, {recursive:true});

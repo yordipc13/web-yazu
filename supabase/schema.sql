@@ -5,6 +5,12 @@ create table if not exists public.administradores (
   user_id uuid primary key references auth.users(id) on delete cascade
 );
 
+create table if not exists public.favoritos_usuario (
+  user_id uuid primary key references auth.users(id) on delete cascade,
+  product_ids uuid[] not null default '{}',
+  updated_at timestamptz not null default now()
+);
+
 create or replace function public.es_admin()
 returns boolean language sql stable security definer
 set search_path = public, pg_temp
@@ -75,10 +81,13 @@ create table if not exists public.galeria (
 );
 
 alter table public.administradores enable row level security;
+alter table public.favoritos_usuario enable row level security;
 alter table public.productos enable row level security;
 alter table public.galeria enable row level security;
 drop policy if exists "administradores pueden ver su acceso" on public.administradores;
 create policy "administradores pueden ver su acceso" on public.administradores for select to authenticated using (user_id = auth.uid());
+drop policy if exists "cada usuario gestiona sus favoritos" on public.favoritos_usuario;
+create policy "cada usuario gestiona sus favoritos" on public.favoritos_usuario for all to authenticated using (user_id = auth.uid()) with check (user_id = auth.uid());
 drop policy if exists "productos visibles" on public.productos;
 create policy "productos visibles" on public.productos for select to anon, authenticated using (estado = 'activo' or public.es_admin());
 drop policy if exists "administradores gestionan productos" on public.productos;
@@ -88,6 +97,8 @@ create policy "galeria visible" on public.galeria for select to anon, authentica
 drop policy if exists "administradores gestionan galeria" on public.galeria;
 create policy "administradores gestionan galeria" on public.galeria for all to authenticated using (public.es_admin()) with check (public.es_admin());
 revoke all on public.administradores from anon, authenticated;
+revoke all on public.favoritos_usuario from anon, authenticated;
+grant select, insert, update on public.favoritos_usuario to authenticated;
 revoke insert, update, delete on public.productos, public.galeria from anon;
 grant select on public.productos, public.galeria to anon, authenticated;
 grant insert, update, delete on public.productos, public.galeria to authenticated;

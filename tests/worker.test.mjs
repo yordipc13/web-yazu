@@ -53,6 +53,11 @@ test('admin page is available at the requested route', async () => {
   assert.equal(await result.text(),'admin');
   assert.equal(result.headers.get('x-frame-options'),'DENY');
 });
+test('unknown page routes redirect to the home page', async () => {
+  const result = await worker.fetch(new Request('https://yazu.example/live-share-entry'),env);
+  assert.equal(result.status,302);
+  assert.equal(result.headers.get('location'),'https://yazu.example/');
+});
 test('admin endpoints reject requests without a session', async () => {
   assert.equal((await worker.fetch(new Request('https://yazu.example/api/admin/users'),env)).status,401);
 });
