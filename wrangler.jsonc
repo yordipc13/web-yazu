@@ -1,0 +1,14 @@
+{
+  "name": "yazu",
+  "main": "worker.js",
+  "compatibility_date": "2026-01-01",
+  "assets": {
+    "directory": ".worker-assets",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "SUPABASE_URL": "https://yzcgfatgtojgwntdpojp.supabase.co",
+    "SUPABASE_PUBLISHABLE_KEY": "sb_publishable_suotj74V1Gxlm_Ja3dPNNg_KH7s3odE"
+  }
+}

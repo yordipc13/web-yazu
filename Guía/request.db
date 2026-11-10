@@ -1,0 +1,199 @@
+LEVANTAMIENTO DE REQUISITOS — YAZÚ
+
+Las siguientes preguntas y respuestas se registran según lo solicitado. Las decisiones señaladas como pendientes no son datos confirmados.
+
+ETAPA 1 — COMPRA, ENTREGA Y PAGO
+
+1. ¿Qué número, con código de país, recibirá los pedidos? Si aún no está definido, indícalo.
+Respuesta: Pendiente.
+2. Además del nombre y contacto ya acordados, ¿qué otros datos debe solicitar el carrito antes de abrir WhatsApp?
+Respuesta: Localidad.
+3. ¿Cómo se entregarán o retirarán los pedidos y en qué zonas se brindará el servicio? Incluye cualquier condición que ya esté confirmada.
+Respuesta: De eso se encarga Natalia personalmente.
+4. ¿El costo de entrega se calcula en la página, se coordina por WhatsApp o sigue pendiente?
+Respuesta: Los costos siguen pendientes.
+5. ¿Cuándo y dónde se compartirá el número o las instrucciones de pago: en la página o solamente por WhatsApp? No es necesario dar un número si aún no está definido.
+Respuesta: El SINPE aparece en contacto y en WhatsApp.
+6. ¿Los precios se mostrarán en colones, dólares u otra moneda? ¿Deben incluir impuestos?
+Respuesta: Colones; impuestos no definidos.
+7. ¿La página debe controlar cantidades disponibles, permitir pedidos sujetos a confirmación, o mostrar ambas cosas?
+Respuesta: No controlar inventario; se ocultan productos no disponibles desde administración y Natalia gestiona la confirmación.
+8. Además de productos, cantidades y datos del cliente, ¿qué información debe incluir el mensaje de WhatsApp? ¿El pedido debe también guardarse en Supabase o basta con enviarlo por WhatsApp?
+Respuesta: Nada más; solo pedir confirmación de disponibilidad. Los acuerdos los gestiona Natalia. Las artesanías pueden tardar más de un mes.
+
+ETAPA 2 — IDENTIDAD VISUAL Y EXPERIENCIA
+
+9. Dentro del estilo editorial cálido ya indicado, ¿prefieres una estética más minimalista, colorida, rústica, elegante u otra? ¿Hay alguna página que te guste como referencia?
+Respuesta: Moderna y cálida, siguiendo la identidad de la marca sin copiar la identidad de las imágenes de referencia.
+10. ¿Debo seguir estrictamente el documento «Paletas e fontes.pdf» o puedo adaptar sus colores y tipografías? ¿Hay colores que quieras destacar o evitar?
+Respuesta: Seguir fielmente Paletas e fontes.
+11. ¿Qué debería destacar primero en la portada: las mujeres y sus historias, los productos, el propósito de la colectiva u otra cosa? ¿Tienes un lema o texto principal?
+Respuesta: Los productos y lo que es negocio primero.
+12. ¿Prefieres una página principal larga con secciones y navegación interna, varias páginas independientes, o una combinación? ¿Qué sección debería recibir más protagonismo?
+Respuesta: Varias páginas independientes, separando información y trasfondo del negocio.
+13. ¿Con qué modo debe abrir inicialmente la web: claro, oscuro o el configurado en el dispositivo? ¿Deseas recordar la elección manual?
+Respuesta: Primero el modo del dispositivo, recordando la selección manual.
+14. ¿Dispones de fotografías autorizadas de las emprendedoras, sus productos y actividades para usar en el sitio? Si todavía no, ¿cómo prefieres presentar las secciones que dependan de ellas?
+Respuesta: Dejar espacio para imágenes y usar logo_yazu.png provisionalmente.
+15. ¿Prefieres un lenguaje cercano y sencillo, más institucional, más emotivo u otro? ¿Ya existen textos oficiales de presentación?
+Respuesta: Lenguaje sencillo.
+16. ¿Proporcionarás las traducciones de los textos y productos o deseas que se preparen traducciones iniciales revisables? ¿El panel de administración también debe estar en inglés?
+Respuesta: Traducir toda la página; la traducción de productos la hará el usuario después. Administración solo en español.
+17. ¿Hay algún efecto sutil que te guste o quieras evitar, además de no usar parallax ni movimientos pesados? ¿Debemos respetar la preferencia del dispositivo de reducir movimiento?
+Respuesta: Animaciones suaves y sutiles; respetar movimiento reducido.
+
+ETAPA 3 — CATÁLOGO Y CONTENIDO
+
+18. ¿Cuántos emprendimientos se presentarán inicialmente y qué información quieres mostrar de cada uno: nombre, historia, responsable, ubicación, productos, redes u otros datos?
+Respuesta: Dejar el espacio e inventar uno como ejemplo, aclarando que es un ejemplo.
+19. Para representar correctamente la colectiva, ¿Natalia gestiona los pedidos de todos los emprendimientos o solamente de uno? ¿Hay alguna descripción oficial de YaZú y su relación con la colectiva?
+Respuesta: Muestra los demás emprendimientos y deja un enlace a sus propias páginas.
+20. ¿Qué tipos de productos y categorías reales se venderán? ¿Cuáles son los 22 productos iniciales o cuándo estará disponible el Excel?
+Respuesta: Aún no han entregado los productos. Diseñar tarjetas y detalles, dejar la lógica lista y añadir 20 productos naturales, artesanales y ecológicos, como jaleas, jabones, repelentes y salsas.
+21. ¿Cuántos productos de demostración deseas al principio? ¿Debo marcarlos claramente como ejemplos y usar nombres y precios ficticios hasta recibir los datos reales?
+Respuesta: 20; no marcarlos como ejemplos, ya se sabe que lo son.
+22. ¿Cada producto necesita una página propia o basta con una ficha emergente? ¿Qué filtros y búsqueda deseas: categoría, precio, emprendimiento u otros?
+Respuesta: Página propia en la misma pestaña, sin parpadeos ni cambios bruscos, independiente y navegable, con URL compartible basada en el slug.
+23. ¿Qué servicios se ofrecerán y deben aparecer solo informativos o también poder consultarse o solicitarse por WhatsApp?
+Respuesta: Pendiente; dejar espacio para detallarlos más tarde.
+24. ¿Qué ubicaciones deben aparecer y cuentas con direcciones o coordenadas autorizadas? ¿Prefieres un mapa interactivo de algún proveedor, enlaces externos o una presentación sencilla mientras faltan datos?
+Respuesta: Ubicación real pendiente; mapa interactivo con una ubicación provisional de Costa Rica.
+25. ¿La galería mostrará productos, emprendedoras, actividades o una combinación? ¿Debe ser administrable desde el panel o inicialmente puede manejarse como contenido fijo?
+Respuesta: Administrable desde un botón Galería en el menú lateral del panel.
+26. Además de SINPE, WhatsApp y las redes ya mencionadas, ¿deben aparecer correo, horario u otra información? ¿Puedes proporcionar los enlaces exactos de las redes o quedan pendientes?
+Respuesta: Correo ecomonzu@gmail.com; las redes sociales ya se especificaron.
+27. Quedó pendiente si los precios mostrados en colones ya incluyen impuestos o si este detalle todavía no está definido.
+Respuesta: No está definido.
+
+ETAPA 4 — ADMINISTRACIÓN Y DATOS
+
+28. ¿Debemos usar el proyecto que ya aparece en el repositorio? ¿Tienes acceso para aplicar cambios de tablas, autenticación, almacenamiento y políticas de seguridad, o ya existen tablas que debamos respetar?
+Respuesta: Usar ese proyecto; el usuario tiene acceso a todo.
+29. ¿Quiénes usarán el panel? ¿Habrá una o varias cuentas, creadas previamente por una persona administradora? ¿Necesitas recuperación de contraseña?
+Respuesta: Pocas personas, mediante invitación; sí se desea recuperación de contraseña.
+30. ¿Todos los administradores podrán modificar todo el catálogo y la galería, o necesitas roles o permisos distintos? ¿El público podrá registrarse o el acceso será exclusivamente administrativo?
+Respuesta: Sin roles definidos; probablemente solo Natalia sea administradora.
+31. ¿Quieres subir imágenes desde el dispositivo a Supabase Storage, pegar enlaces, o ambas opciones? ¿Una imagen por producto o varias?
+Respuesta: Ambas opciones y varias imágenes por producto.
+32. Además de agregar, editar y ocultar, ¿debe poderse eliminar un producto definitivamente? ¿Se requiere confirmación antes de ocultar o eliminar?
+Respuesta: Sí, desde el menú contextual.
+33. Además de nombre, categoría, precio, descripción, imágenes y estado, ¿qué otros campos necesita cada producto? ¿Quieres campos independientes en español e inglés para completar las traducciones más adelante?
+Respuesta: Solo esos campos, con los mismos datos traducidos en español e inglés.
+34. ¿Qué acciones debe permitir el panel: subir, editar título o descripción, cambiar orden, ocultar y eliminar? ¿Cada imagen necesita categoría o enlace?
+Respuesta: Permitir esas acciones, editar, mover y ocultar, con categoría.
+35. ¿Los 20 productos de prueba deben guardarse en Supabase para poder probar el panel, o prefieres mantenerlos en un entorno de prueba separado? Si llegan a publicarse, se verán como productos reales porque pediste no marcarlos.
+Respuesta: Subirlos a Supabase para probar la conexión; no importa que parezcan reales. Añadir un botón rojo para borrar productos de la base de datos.
+36. El clic derecho no existe en la mayoría de teléfonos: ¿te parece que el mismo menú de opciones también se abra mediante un botón visible en cada tarjeta?
+Respuesta: Abrirlo al mantener presionado.
+37. Para evitar dudas: ¿quieres guardar pedidos o datos de clientes en Supabase, o únicamente enviar la consulta por WhatsApp sin guardarlos en la web?
+Respuesta: Sin guardar nada en la web.
+
+ETAPA 5 — PUBLICACIÓN Y OPERACIÓN
+
+38. ¿Dónde se publicará la web y cuál será su dominio? Si todavía no lo sabes, ¿tienes alguna preferencia por GitHub Pages, Netlify, Vercel u otro servicio?
+Respuesta: Cloudflare; dominio pendiente.
+39. ¿Tienes algún formato preferido para las URL compartibles, por ejemplo «/producto/nombre-del-producto»? Si se cambia el nombre de un producto, ¿debe mantenerse la dirección anterior?
+Respuesta: Nombre del producto separado por guiones, máximo cinco palabras, sin artículos ni preposiciones como la, de, del o a la.
+40. ¿Es indispensable que cada producto muestre automáticamente su propio título, descripción e imagen al compartirlo, incluso si eso exige configuración adicional en el alojamiento, o basta inicialmente una vista previa general de YaZú?
+Respuesta: Que muestre la vista previa al ser compartido.
+41. ¿El botón rojo debe borrar solo todos los productos, o también imágenes almacenadas y datos de la galería? ¿Aceptas exigir una confirmación explícita escrita antes de ejecutar esta acción irreversible?
+Respuesta: Elegir entre borrar todos los productos, borrar imágenes del bucket, borrar descripciones o borrar una categoría.
+42. ¿El proyecto Supabase ya contiene productos, usuarios, imágenes u otros datos que debamos conservar? ¿Está autorizado crear tablas y políticas sin borrar datos existentes?
+Respuesta: No contiene nada y el usuario está autorizado para hacer cualquier cosa.
+43. ¿Las invitaciones se gestionarán desde el panel de Supabase o necesitas un control para invitar personas desde la web? Para recuperar contraseñas, ¿ya tienes configurados los correos y direcciones de redirección de Supabase?
+Respuesta: Un menú Usuarios para invitar y borrar personas.
+44. ¿Hay algún proveedor de mapas que prefieras? Para evitar confundir a visitantes, ¿podemos indicar que la ubicación temporal es solo una referencia hasta recibir la real?
+Respuesta: Cualquier mapa navegable gratuito; no especificar que es provisional porque el sitio aún está en desarrollo.
+45. Cuando falte la traducción inglesa de un producto, ¿prefieres mostrar temporalmente el texto en español o indicar que la traducción está pendiente?
+Respuesta: Mostrar el producto sin traducción.
+46. Además del clic derecho y la pulsación larga que solicitaste, ¿podemos incluir un botón visible de opciones para que también funcione con teclado y tecnologías de asistencia?
+Respuesta: No hace falta añadir accesibilidad en administración. En la página pública no hay interacciones de pulsación larga ni clic derecho.
+47. Como el número aún no está definido, ¿qué debe aparecer en Contacto y en el mensaje de WhatsApp: una indicación de que el pago se coordina por WhatsApp, u otro texto?
+Respuesta: Dejar todo listo para añadir el número después.
+
+ETAPA 6 — PRECISIÓN TÉCNICA
+
+48. ¿Autorizas usar funciones JavaScript de Cloudflare para gestionar invitaciones y eliminaciones con credenciales privadas, y para generar metadatos de cada producto? Las claves privadas permanecerían en variables seguras del servidor, nunca en el navegador.
+Respuesta: Sí, mientras sea seguro y no se pueda alterar el JavaScript para evitar ataques.
+49. ¿La primera persona administradora se creará directamente en Supabase antes de usar el panel, y luego podrá invitar a las demás desde Usuarios? ¿Cómo quieres habilitar la recuperación de contraseña?
+Respuesta: La primera cuenta se hace desde Supabase. Las invitaciones llegan por correo y la persona invitada solo establece su contraseña.
+50. ¿Eliminar desde Usuarios debe borrar la cuenta de Supabase por completo o solamente retirar su acceso administrativo? ¿Debe impedirse que una persona elimine su propia cuenta o la última cuenta administradora?
+Respuesta: Borrar la cuenta de Supabase Auth; permitir que un administrador borre a otro.
+51. Para cada acción irreversible —productos, imágenes, descripciones o categoría—, ¿aceptas que se muestre exactamente qué se borrará y que se exija escribir una frase de confirmación antes de proceder?
+Respuesta: Sí, escribir «eliminar».
+52. Al borrar imágenes del bucket, ¿deben borrarse solo las de productos o también las de la galería? ¿Las referencias de los productos deben limpiarse y volver a mostrar el logo?
+Respuesta: Solo imágenes de productos; limpiar referencias y mostrar el logo.
+53. ¿Borrar descripciones significa dejar vacías las descripciones de todos los productos en ambos idiomas, manteniendo los productos? ¿La opción por categoría debe borrar los productos de esa categoría o solo sus datos?
+Respuesta: Borrar solo descripciones y dejar productos. Borrar categoría elimina todos los productos de esa categoría.
+54. ¿Te parece bien «/producto/jalea-pina-artesanal»? ¿Qué debe suceder si dos productos generan el mismo nombre o si se cambia el nombre de un producto que ya tiene enlaces compartidos?
+Respuesta: No habrá dos productos con el mismo nombre; si cambia el nombre, los enlaces viejos pueden dejar de servir.
+55. ¿El carrito debe conservarse en el navegador si la persona cierra o recarga la página, o vaciarse al salir? ¿Debe vaciarse automáticamente al abrir WhatsApp?
+Respuesta: Debe conservarse. Añadir favoritos.
+56. Mientras no haya número de WhatsApp, ¿prefieres deshabilitar el envío del pedido mostrando que el contacto está pendiente, o alguna otra alternativa?
+Respuesta: Dejar todo listo para añadirlo; nadie usará la página hasta que esté terminada.
+57. ¿Te parece adecuado preparar una carga inicial explícita y ejecutarla una sola vez cuando autorices la conexión, sin reemplazar productos que se agreguen después?
+Respuesta: Sí.
+
+ETAPA 7 — NAVEGACIÓN PÚBLICA
+
+58. ¿Qué páginas independientes quieres en el menú? Por ejemplo: Inicio, Productos, Emprendimientos, Servicios, Mapa, Galería y Contacto. ¿Catálogo debe ser otra página distinta de Productos o son la misma?
+Respuesta: Esas secciones, separando negocio e información; la información se recorre verticalmente.
+59. ¿Deben guardarse solo en el navegador, sin cuentas de clientes? ¿Quieres una página o panel de favoritos y la opción de añadirlos al carrito?
+Respuesta: Guardar favoritos en la caché de la página.
+60. ¿Debe mostrar cantidades, subtotal por producto y total estimado en colones? Como disponibilidad, entrega e impuestos se acuerdan aparte, ¿qué aclaración quieres mostrar junto al total?
+Respuesta: Sin aclaraciones; mostrar el total.
+61. ¿Nombre, contacto y localidad serán obligatorios antes de abrir WhatsApp? ¿El contacto puede ser un teléfono o también un correo?
+Respuesta: Obligatorios al abrir WhatsApp desde cotización; desde el pie de página no debe aparecer nada.
+62. Para distinguirlos correctamente: ¿el carrito contiene únicamente productos de YaZú, mientras los demás emprendimientos se presentan con enlaces a sus propias páginas?
+Respuesta: Correcto.
+63. ¿El mapa provisional necesita un marcador o basta con un mapa navegable de Costa Rica? Para Servicios, ¿prefieres una página con un espacio neutro mientras falta la información?
+Respuesta: Ubicación provisional en San José; cambiará después.
+64. Si Supabase o una imagen no cargan, ¿te parece adecuado mostrar un mensaje de error claro y permitir reintentar, usando el logo únicamente cuando falte la imagen?
+Respuesta inicial: Dejar el logo en ambos casos. Posteriormente aceptó también aviso y reintento para errores de base de datos.
+65. Para las URL: ¿podemos convertir tildes y ñ a caracteres simples, por ejemplo «piña» → «pina»? Si dos nombres diferentes producen el mismo slug de hasta cinco palabras, ¿prefieres impedir el guardado hasta que se ajuste el nombre?
+Respuesta: Cambiar caracteres, añadir columna slug y generarlo en la base de datos sin impedir el guardado.
+66. ¿Ya cuentas con textos de privacidad, términos de uso o avisos sobre datos y cookies? Si no, ¿prefieres dejar esas páginas o enlaces pendientes sin inventar políticas?
+Respuesta: Aún no hay políticas; se hablará después.
+
+ETAPA FINAL — PRECISIONES
+
+67. ¿Quieres que Emprendimientos, Servicios, Mapa, Galería y Contacto estén reunidos en una sola página informativa con desplazamiento vertical y enlaces directos a cada sección, mientras Inicio, catálogo y detalle de producto se mantienen separados?
+Respuesta: Sí.
+68. Dos nombres distintos pueden producir el mismo slug al quitar artículos y limitarlo a cinco palabras. Como no quieres impedir el guardado, ¿autorizas que se añada automáticamente un número y se ajuste el texto para que la dirección siga siendo única y tenga como máximo cinco segmentos?
+Respuesta: Sí.
+69. Usaremos el logo como solicitaste. Si la base de datos no responde, ¿podemos mostrar también un aviso y un botón para reintentar, para no confundir un error con un catálogo vacío?
+Respuesta: Sí.
+70. ¿Prefieres ver los favoritos en una página independiente o en un panel accesible desde el encabezado? ¿Deben poder agregarse al carrito desde ahí?
+Respuesta: Igual que el carrito pero solo mostrando favoritos, sin enlace a WhatsApp ni compra.
+71. ¿El carrito debe conservarse después de abrir WhatsApp o vaciarse en ese momento?
+Respuesta: Conservarse.
+72. Como borrar una cuenta es irreversible, ¿aceptas pedir confirmación antes de eliminarla y proteger al menos contra el borrado accidental de la propia cuenta? Esto no impediría borrar a otras personas administradoras.
+Respuesta: Aceptado.
+73. La guía pide «Guía\request.md», pero encontré un «Guía\request.db» vacío. ¿Quieres que se cree el archivo .md indicado en la guía y se deje intacto el .db existente?
+Respuesta: Usar request.db; el nombre .md de las instrucciones era un error.
+74. ¿Puedes proporcionar una copia legible del PDF, capturas de sus páginas o los colores y nombres exactos de las tipografías? Si prefieres dejarlo pendiente, lo indicaré como requisito para terminar fielmente el diseño.
+Respuesta: Volver a intentar abrir el PDF. Resultado: el navegador lo abrió; el problema era del primer lector.
+75. ¿Utilizarás Cloudflare Pages con Pages Functions, Cloudflare Workers u otra opción? Si aún no lo sabes, puedo planificar con Pages y sus funciones, sujeto a confirmación.
+Respuesta: Cloudflare Workers.
+76. ¿Están aplicados schema.sql y seed.sql, y está creada la primera cuenta administradora?
+Respuesta: Ya están aplicados y la cuenta está creada.
+77. ¿El proyecto donde ejecutaste los archivos corresponde al proyecto configurado en supabase/connection.js? ¿Qué devuelve la consulta de verificación de tablas y se pudo ejecutar la actualización de la caché de PostgREST?
+Respuesta: Aparecen productos y galería; inicialmente se había elegido otro proyecto por error. Después se comprobó que el proyecto configurado responde con los 20 productos y sus slugs.
+78. ¿Puedes volver a aplicar el schema.sql actualizado al proyecto configurado y confirmar que la primera cuenta administradora existe y tiene acceso en ese mismo proyecto?
+Respuesta: El esquema actualizado se aplicó en el proyecto correcto; la cuenta y su acceso se confirmaron.
+79. ¿Puedes iniciar sesión personalmente en el panel local abierto, sin compartir tu contraseña, para comprobar el acceso administrativo real?
+Respuesta: El usuario solicitó el script para otorgar permisos de administrador por correo antes de iniciar sesión.
+80. ¿Pudiste ejecutar el script con el correo de una cuenta existente e iniciar sesión en el panel local?
+Respuesta: Supabase informó que el bloque SQL estaba incompleto. Se preparó una consulta alternativa de una sola instrucción.
+81. ¿Qué resultado muestra la consulta alternativa y pudiste iniciar sesión en el panel local?
+Respuesta: La consulta se ejecutó y el usuario pudo acceder a administración.
+82. ¿Puedes configurar localmente el secreto privado de Supabase en .dev.vars, sin compartirlo en el chat, para probar el menú Usuarios sin publicar la página?
+Respuesta: El usuario preguntó dónde encontrar la clave. Se aclaró que está en Settings > API Keys de Supabase y se preparó compatibilidad con la clave secreta actual.
+83. ¿Pudiste guardar la clave secreta del proyecto en .dev.vars, sin compartirla en el chat?
+Respuesta: El usuario preguntó dónde se encuentra .dev.vars; se aclaró que debe crearse en la raíz del proyecto a partir de la plantilla.
+84. ¿Creaste el archivo .dev.vars en la raíz y guardaste allí la clave secreta?
+Respuesta: El usuario preguntó para qué sirve y si es necesario colocar una clave privada en la raíz del proyecto. Se explicó que es opcional para pruebas locales, que la gestión de usuarios requiere un secreto en el servidor y que el archivo contiene la clave en texto plano.
+85. ¿Cómo prefieres manejar la configuración del secreto para la gestión de usuarios?
+Respuesta: Dejarlo para después y configurarlo directamente en Cloudflare.
+86. ¿Dispones de los archivos Doodler y Gilroy con autorización para usarlos en la web, o prefieres mantener tipografías de respaldo hasta conseguirlos?
+Respuesta: Usar alternativas por ahora.

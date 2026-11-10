@@ -1,0 +1,35 @@
+CAMBIOS Y MEJORAS — YAZÚ
+
+Implementación local:
+- Página pública en HTML, CSS y JavaScript, con marca YaZú, logotipo, paleta de referencia, estilo moderno y cálido, diseño adaptable, temas claro y oscuro, animaciones suaves y soporte de movimiento reducido.
+- Portada, catálogo con búsqueda y categoría, detalle por producto, favoritos y carrito persistentes en el navegador; recorrido informativo con emprendimiento de ejemplo, servicios pendientes, mapa navegable de San José, galería y contacto.
+- Español e inglés para la interfaz pública y campos preparados para traducciones de productos. Administración en español.
+- Consultas por WhatsApp con nombre, contacto y localidad; sin almacenar pedidos o datos de clientes en la base de datos. Número de WhatsApp y SINPE configurables y aún pendientes.
+- Panel en /admin/admin con autenticación, recuperación de contraseña, productos, galería, usuarios invitados, carga de imágenes y borrado masivo con confirmación.
+- Migración SQL con tablas, slug generado, políticas RLS, buckets separados y comprobaciones de administración; semilla explícita de 20 productos provisionales.
+- Worker para rutas, información al compartir y gestión protegida de cuentas; preparación de recursos públicos separada de los archivos internos.
+- Registro de preguntas y respuestas en Guía/request.db; instrucciones de configuración y pruebas en README.md.
+
+SEO y Open Graph:
+- title, meta description, og:type, og:title, og:description, og:image, og:url, enlace canonical y twitter:card.
+- Título, descripción, imagen y URL individuales por producto generados por el Worker, con logo como imagen alternativa; respuestas 404 para productos ausentes u ocultos.
+- Panel con noindex, nofollow. Las URL absolutas utilizan el dominio de la solicitud.
+
+Estado y pendientes:
+- Supabase responde con los 20 productos de prueba y sus 20 slugs únicos válidos; la tabla de galería también responde. Los archivos SQL y la primera cuenta se gestionaron desde el panel de Supabase.
+- Se reforzaron los permisos explícitos en schema.sql y el usuario confirmó que volvió a aplicarlo y configuró la primera cuenta en el proyecto correcto. Se verificó que el acceso anónimo no ve registros administrativos y no puede ejecutar el borrado.
+- No se ha desplegado el Worker ni configurado su secreto, las redirecciones de autenticación o el correo; tampoco se ha probado el panel contra una cuenta real.
+- Sustituir antes de publicar los 20 productos provisionales, el emprendimiento de ejemplo, la ubicación provisional, imágenes, datos de contacto y cualquier texto pendiente. El número de WhatsApp, el SINPE, los impuestos, las políticas, los costos de entrega, los servicios y el dominio definitivo aún no están definidos.
+- Las familias tipográficas se intentan usar si están instaladas; el usuario aceptó alternativas por ahora. No se distribuyen archivos de fuentes hasta verificar sus licencias.
+
+Verificación local:
+- Sintaxis de JavaScript y preparación de recursos públicos verificadas.
+- Nueve pruebas automatizadas del Worker superadas: metadatos de productos, producto inexistente, fallo de base de datos, ruta de administración, controles de autorización e invitación y manejo de claves secretas.
+- Navegador: catálogo y detalle con datos simulados; favoritos, carrito persistente, importes decimales, mensaje de WhatsApp, traducción, mapa y menú contextual de administración con pulsación larga comprobados localmente.
+- Navegador con Supabase real: los 20 productos se muestran, la búsqueda por piña encuentra un producto y su ficha permite agregarlo al carrito. El Worker genera Open Graph con los datos del producto real.
+- Wrangler local: portada, catálogo, ruta de producto, producto inexistente, activos y /admin/admin responden; metadatos de producto verificados sin publicar.
+- Cuenta administradora real: inicio de sesión, creación, edición, ocultación y eliminación de un producto temporal; comprobación de slug al renombrar; creación, orden, ocultación, carga y eliminación de una imagen temporal de galería; prueba de borrado por categoría con confirmación. Se retiraron los datos y archivos temporales.
+- El menú Usuarios requiere configurar el secreto privado del Worker. El usuario decidió hacerlo más adelante directamente en Cloudflare; las invitaciones por correo y un Worker desplegado aún no se han probado.
+- El Worker admite claves secretas actuales de Supabase y las antiguas service_role, manteniéndolas únicamente en el servidor.
+- Se añadió supabase/hacer_admin.sql para conceder acceso administrativo a una cuenta existente mediante su correo. Ante un error al ejecutar el bloque inicial, se sustituyó por una única consulta que informa si la cuenta no existe, ya tiene acceso o acaba de obtenerlo.
+- Se corrigió la preparación de recursos para incluir logo_yazu.png junto al SVG, de modo que el logo de reemplazo esté disponible donde falten imágenes. Se añadieron pruebas del recurso y de su uso en Open Graph.

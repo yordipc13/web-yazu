@@ -1,0 +1,3 @@
+.worker-assets/
+.wrangler/
+.dev.vars*

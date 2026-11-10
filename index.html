@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf2">
+  <meta name="description" content="YaZú: productos naturales y artesanales que apoyan iniciativas agroecológicas de mujeres rurales de Costa Rica.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YaZú | Productos con raíces">
+  <meta property="og:description" content="Conoce productos artesanales y una colectiva agroecológica de Costa Rica.">
+  <meta property="og:image" content="/assets/logo_yazu.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>YaZú | Productos con raíces</title>
+  <link rel="icon" href="/assets/logo_yazu.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/index.css">
+  <script type="module" src="/index.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <div class="header-inner wrap">
+      <a class="brand" href="/" data-link aria-label="YaZú, inicio"><img src="/assets/logo_yazu.svg" alt=""><span>YaZú</span></a>
+      <nav class="navigation" aria-label="Navegación principal">
+        <a href="/#inicio" data-link data-i18n="home" data-nav="home">Inicio</a>
+        <a href="/productos" data-link data-i18n="products" data-nav="products">Productos</a>
+        <a href="/#historia" data-link data-i18n="about" data-nav="history">Nuestra historia</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme" class="icon-button" type="button" aria-label="Cambiar tema">◐</button>
+        <button id="language" class="language" type="button" aria-label="Cambiar idioma"><span class="language-flag" aria-hidden="true">🇨🇷</span><span class="language-code">ES</span></button>
+        <a href="/favoritos" data-link class="icon-button" id="favorites-link" aria-label="Favoritos">♡ <span id="favorite-count">0</span></a>
+        <a href="/carrito" data-link class="icon-button" id="cart-link" aria-label="Carrito">◒ <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+  <main id="contenido" tabindex="-1" aria-live="polite">
+    <div class="wrap loading" role="status">Cargando YaZú…</div>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand"><img class="footer-logo" src="/assets/logo_yazu.svg" alt="YaZú"><p data-i18n="footerText">Hecho con raíces, cuidado y comunidad.</p></div>
+      <div><strong data-i18n="explore">Explorar</strong><a href="/productos" data-link data-i18n="products">Productos</a><a href="/informacion" data-link data-i18n="about">Nuestra historia</a><a href="/informacion#contacto" data-link data-i18n="contact">Contacto</a></div>
+      <div class="footer-contact"><strong data-i18n="contact">Contacto</strong><a href="mailto:ecomonzu@gmail.com">ecomonzu@gmail.com</a><p class="footer-location">Colectivo Agroecológico · Costa Rica</p></div>
+      <div class="footer-networks"><strong data-i18n="socials">Redes sociales</strong>
+        <a class="social-link" href="https://www.instagram.com/chapernoagroeco/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de YaZú">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="18" cy="6" r="1"/></svg><span>Instagram</span>
+        </a>
+        <span class="social-link social-pending" id="footer-facebook" aria-disabled="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8z"/></svg><span>Facebook</span><small data-i18n="socialPending">Enlace pendiente</small>
+        </span>
+        <span class="social-link social-pending" id="footer-whatsapp" aria-disabled="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.3zM12.1 21.6h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.1c0-5.5 4.5-10 10-10 2.7 0 5.2 1 7.1 2.9a9.9 9.9 0 0 1 2.9 7.1c0 5.4-4.5 9.8-10 9.8zm5.5-7.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-1-2.1-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.2-.3-.3-.6-.5z"/></svg><span>WhatsApp</span><small data-i18n="socialPending">Enlace pendiente</small>
+        </span>
+      </div>
+    </div>
+    <div class="wrap footer-bottom"><span>© YaZú · Costa Rica</span><a href="mailto:ecomonzu@gmail.com">ecomonzu@gmail.com</a></div>
+  </footer>
+  <div id="notice" class="notice" role="status" hidden></div>
+</body>
+</html>
