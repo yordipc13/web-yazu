@@ -4,11 +4,11 @@ Sitio público en HTML, CSS y JavaScript, con datos en Supabase y rutas dinámic
 
 ## Preparación de Supabase
 
-1. En el proyecto ya configurado en `supabase/connection.js`, ejecuta `supabase/schema.sql` en el editor SQL de Supabase. Revisa cualquier conflicto con tablas o políticas existentes antes de aplicar el esquema.
+1. En el proyecto ya configurado en `supabase/connection.js`, ejecuta `supabase/schema.sql` en el editor SQL de Supabase. El esquema incluye `favoritos_usuario` y sus políticas RLS; revisa cualquier conflicto con tablas o políticas existentes antes de aplicarlo.
 2. Crea la primera cuenta en Authentication. Para concederle acceso, abre `supabase/hacer_admin.sql`, sustituye el correo de ejemplo por el de esa cuenta y ejecuta la consulta completa en el editor SQL. El resultado indica si la cuenta no existe, si se concedió el acceso o si ya estaba concedido; repetirla no duplica el acceso.
 3. Si la tabla de productos está vacía y deseas cargar los 20 productos provisionales, ejecuta `supabase/seed.sql` una sola vez. La carga falla sin insertar nada si la tabla ya contiene productos. Las imágenes vacías muestran el logo.
-4. Habilita el registro por correo en Authentication para que cada persona pueda crear una cuenta e iniciar sesión desde Favoritos. Configura la URL del sitio y las redirecciones permitidas para el dominio real; configura y prueba el proveedor de correo y la confirmación de cuentas.
-5. El registro no concede acceso administrativo. Las políticas RLS limitan la administración del catálogo a cuentas presentes en `administradores`; la tabla `favoritos_usuario` solo permite a cada cuenta acceder a sus propios favoritos. Los buckets `productos` y `galeria` son públicos para lectura de imágenes y requieren administración para modificarlas. No subas contenido privado a esos buckets.
+4. Habilita el registro por correo en Authentication para que quien quiera pueda crear una cuenta e iniciar sesión desde Favoritos. La cuenta es opcional: los favoritos se guardan localmente sin autenticarse. Para verlos en otro dispositivo, inicia sesión y pulsa "Sincronizar favoritos". Configura la URL del sitio y las redirecciones permitidas para el dominio real; configura y prueba el proveedor de correo y la confirmación de cuentas.
+5. El registro no concede acceso administrativo. Las políticas RLS limitan la administración del catálogo a cuentas presentes en `administradores`; `favoritos_usuario` solo permite a cada cuenta acceder a sus propios favoritos. Los buckets `productos` y `galeria` son públicos para lectura de imágenes y requieren administración para modificarlas. No subas contenido privado a esos buckets.
 
 ## Cloudflare Workers
 
