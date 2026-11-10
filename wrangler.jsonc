@@ -2,6 +2,9 @@
   "name": "yazu",
   "main": "worker.js",
   "compatibility_date": "2026-01-01",
+  "build": {
+    "command": "node build.mjs"
+  },
   "assets": {
     "directory": ".worker-assets",
     "binding": "ASSETS",
