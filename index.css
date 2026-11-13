@@ -77,3 +77,53 @@ h1,h2,h3{letter-spacing:0}
 .favorite-auth-form .button{white-space:nowrap}
 .favorite-sync-message{grid-column:1/-1;min-height:1.5em}
 @media(max-width:800px){.favorite-sync{grid-template-columns:1fr}.favorite-sync-actions{justify-content:flex-start}.favorite-auth-form{grid-template-columns:1fr}.favorite-auth-form .button{justify-self:start}.favorite-sync-message{grid-column:auto}}
+.hero{background-image:linear-gradient(rgba(26,33,27,.5),rgba(26,33,27,.72)),url("/assets/decorativas/foto-2.jpg")}
+.fondo-1{background-image:linear-gradient(color-mix(in srgb,var(--bg) 66%,transparent),color-mix(in srgb,var(--bg) 66%,transparent)),url("/assets/fondos/fondo-1.png")}
+.fondo-2{background-image:linear-gradient(color-mix(in srgb,var(--bg) 66%,transparent),color-mix(in srgb,var(--bg) 66%,transparent)),url("/assets/fondos/fondo-2.png")}
+
+/* Use one continuous tapestry behind the initiative and services sections. */
+.tapestry{
+  background-color:var(--bg);
+  background-image:linear-gradient(color-mix(in srgb,var(--bg) 66%,transparent),color-mix(in srgb,var(--bg) 66%,transparent)),url("/assets/fondos/fondo-1.png");
+  background-repeat:repeat;
+  background-position:center top;
+  background-size:1755px 1755px;
+}
+.tapestry > .fondo-1,
+.tapestry > .fondo-2{
+  background-color:transparent;
+  background-image:none;
+}
+
+:root[data-theme=dark] .tapestry{
+  background-image:linear-gradient(rgba(20,28,21,.68),rgba(20,28,21,.68)),url("/assets/fondos/fondo-1.png");
+}
+:root[data-theme=dark] .tapestry > .fondo-1,
+:root[data-theme=dark] .tapestry > .fondo-2{
+  background-color:transparent;
+  background-image:none;
+}
+
+/* Keep media grids comfortable on tablets and narrow phones. */
+.map{height:clamp(260px,36vw,400px)}
+@media(max-width:800px){
+  .video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:540px){
+  .video-grid{grid-template-columns:1fr}
+  .map{height:300px}
+  .header-inner{column-gap:.25rem}
+  .header-actions{gap:.15rem}
+  .icon-button,.language{padding:.5rem .4rem}
+  .navigation{gap:clamp(.8rem,5vw,1.3rem)}
+}
+@media(max-width:360px){
+  .brand img{width:50px;height:48px}
+  .language{gap:.2rem}
+  #favorites-link{padding-inline:.3rem}
+}
+
+.checkout .field{margin-top:.35rem}
+.checkout select.field{width:100%;min-width:0}
+.quote-payment{margin:1rem 0;color:var(--muted);font-size:.92rem}
