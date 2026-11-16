@@ -38,6 +38,19 @@ const files = [
   [['assets','optimized','fondos','fondo-3.webp'], ['assets','optimized','fondos','fondo-3.webp']],
   [['assets','videos','chaperno.mp4'], ['assets','videos','chaperno.mp4']],
 ];
+async function collectOptimized(relative = 'assets/optimized') {
+  const found = [];
+  for (const entry of await readdir(path.join(root, relative), {withFileTypes:true})) {
+    const name = path.join(relative, entry.name);
+    if (entry.isDirectory()) found.push(...await collectOptimized(name));
+    else if (entry.isFile()) found.push(name);
+  }
+  return found;
+}
+for (const relative of await collectOptimized()) {
+  const parts = relative.split(path.sep);
+  files.push([parts, parts]);
+}
 const allowed = new Set(files.map(([, destination]) => path.join(...destination)));
 await mkdir(output, {recursive:true});
 async function checkOutput(relative = '') {
