@@ -4,19 +4,19 @@ import { config } from './site-config.js';
 const logo = location.port === '5500' ? '/InsumosYaZú.tx/Timbó/Logomarca/logo_yazu.svg' : '/assets/logo_yazu.svg';
 const messages = {
   es: {
-    home:'Inicio', products:'Productos', about:'Nuestra historia', contact:'Contacto', explore:'Explorar', footerText:'Hecho con raíces, cuidado y comunidad.', socials:'Redes sociales', socialPending:'Enlace pendiente',
-    heroLabel:'PAISAJES - SABERES - SABORES - CUIDADOS', heroTitle:'Productos con raíces', heroText:'Descubre productos hechos con cuidado y conoce las historias que los acompañan.', shop:'Explorar productos', featured:'Una selección para ti', featuredText:'Pequeños detalles que nos conectan con la tierra.', all:'Ver todos los productos', storyLabel:'CONOCE YAZÚ', storyTitle:'Una comunidad que florece', storyText:'YaZú visibiliza iniciativas agroecológicas lideradas por mujeres rurales de Costa Rica.', discover:'Conoce más',
-    catalogLabel:'EL CATÁLOGO', catalogTitle:'Encuentra algo especial', catalogText:'Explora nuestra selección de productos.', search:'Buscar productos', categories:'Todas las categorías', empty:'Todavía no hay productos para mostrar.', error:'No pudimos cargar el contenido. Inténtalo de nuevo.', retry:'Reintentar', add:'Agregar al carrito', added:'Producto agregado al carrito.', favorite:'Agregar a favoritos', unfavorite:'Quitar de favoritos', back:'Volver a productos', description:'Descripción', noDescription:'', unavailable:'Este producto no está disponible.', image:'Imagen del producto',
-    infoLabel:'LA COLECTIVA', infoTitle:'Historias que nos unen', infoText:'Conoce las iniciativas y personas que dan vida a nuestra comunidad.', ventures:'Emprendimientos', services:'Servicios', map:'Mapa', gallery:'Galería', ventureTitle:'Una iniciativa de ejemplo', ventureText:'Este espacio muestra cómo podremos compartir la historia de un emprendimiento y enlazar su página.', pending:'Próximamente compartiremos más información.', location:'Encuéntranos en el mapa', galleryEmpty:'Próximamente compartiremos imágenes de nuestra comunidad.', write:'Escríbenos', sinpe:'SINPE Móvil',
-    favorites:'Favoritos', favoritesText:'Tus productos guardados.', favoritesEmpty:'Aún no tienes favoritos.', syncTitle:'Tus favoritos en otros dispositivos', syncOptional:'Opcional · sincronización manual', syncText:'Tus favoritos se guardan en este dispositivo. Crea una cuenta o inicia sesión para sincronizarlos cuando quieras.', createAccount:'Crear cuenta', signIn:'Iniciar sesión', email:'Correo electrónico', password:'Contraseña', createAccountAction:'Registrarme', signInAction:'Iniciar sesión', syncFavorites:'Sincronizar favoritos', signOut:'Cerrar sesión', signedInAs:'Sesión iniciada como', authWorking:'Procesando…', checkEmail:'Revisa tu correo para confirmar la cuenta.', signedUp:'Cuenta creada. Ya puedes sincronizar tus favoritos.', syncComplete:'Favoritos sincronizados.', syncFailed:'No se pudieron sincronizar los favoritos. Inténtalo de nuevo.', authFailed:'No se pudo completar la solicitud. Revisa los datos e inténtalo de nuevo.', signedOut:'Sesión cerrada. Tus favoritos siguen guardados en este dispositivo.', cart:'Tu carrito', cartText:'Reúne tus productos para consultar su disponibilidad.', cartEmpty:'Tu carrito está vacío.', quantity:'Cantidad', remove:'Quitar', total:'Total', name:'Nombre', contactField:'Teléfono o correo de contacto', locality:'Localidad', send:'Consultar por WhatsApp', whatsappPending:'WhatsApp estará disponible próximamente.', quote:'Hola, me gustaría consultar la disponibilidad de estos productos:', client:'Nombre', contactInfo:'Contacto', localityInfo:'Localidad',
+    home:'Inicio', products:'Productos', about:'La historia', contact:'Contacto', explore:'Explorar', footerText:'Hecho con raíces, cuidado y comunidad.', socials:'Redes sociales', socialPending:'Enlace pendiente',
+    heroLabel:'PAISAJES · SABERES · SABORES · CUIDADOS', heroTitle:'Productos con raíces', heroText:'Descubre productos hechos con cuidado y conoce las historias que los acompañan.', shop:'Explorar productos', featured:'Una selección para ti', featuredText:'Pequeños detalles que nos conectan con la tierra.', all:'Ver todos los productos', storyLabel:'CONOCE YAZÚ', storyTitle:'Una comunidad que florece', storyText:'YaZú visibiliza iniciativas agroecológicas lideradas por mujeres rurales de Costa Rica.', discover:'Conoce más',
+    catalogLabel:'EL CATÁLOGO', catalogTitle:'Encuentra algo especial', catalogText:'Explora nuestra selección de productos.', search:'Buscar productos', categories:'Todas las categorías', empty:'Todavía no hay productos para mostrar.', error:'No pudimos cargar el contenido. Inténtalo de nuevo.', retry:'Reintentar', add:'Agregar a cotización', added:'Producto agregado a la cotización.', favorite:'Agregar a favoritos', unfavorite:'Quitar de favoritos', back:'Volver a productos', description:'Descripción', noDescription:'', unavailable:'Este producto no está disponible.', image:'Imagen del producto',
+    infoLabel:'LA COLECTIVA', infoTitle:'Historias que nos unen', infoText:'Conoce las iniciativas y personas que dan vida a nuestra comunidad.', ventures:'Emprendimientos', services:'Servicios', map:'Mapa', gallery:'Galería', galleryProducts:'Productos y huerta', galleryProductsTitle:'Lo que hacemos y compartimos', galleryCommunity:'La comunidad', galleryCommunityTitle:'Historias de nuestra comunidad', galleryOpenProducts:'Ver galería completa', galleryCloseProducts:'Ocultar galería', galleryOpenCommunity:'Ver fotos de la comunidad', galleryCloseCommunity:'Ocultar fotos de la comunidad', ventureTitle:'Una iniciativa de ejemplo', ventureText:'Este espacio muestra cómo podremos compartir la historia de un emprendimiento y enlazar su página.', pending:'Próximamente compartiremos más información.', location:'Encuéntranos en el mapa', galleryEmpty:'Próximamente compartiremos imágenes de nuestra comunidad.', write:'Escríbenos', sinpe:'SINPE Móvil',
+    favorites:'Favoritos', favoritesText:'Tus productos guardados.', favoritesEmpty:'Aún no tienes favoritos.', syncTitle:'Tus favoritos en otros dispositivos', syncText:'Tus favoritos se guardan en este dispositivo. Crea una cuenta o inicia sesión para sincronizarlos cuando quieras.', createAccount:'Crear cuenta', signIn:'Iniciar sesión', email:'Correo electrónico', password:'Contraseña', createAccountAction:'Registrarme', signInAction:'Iniciar sesión', syncFavorites:'Sincronizar favoritos', signOut:'Cerrar sesión', signedInAs:'Sesión iniciada como', authWorking:'Procesando…', checkEmail:'Revisa tu correo para confirmar la cuenta.', signedUp:'Cuenta creada. Ya puedes sincronizar tus favoritos.', syncComplete:'Favoritos sincronizados.', syncFailed:'No se pudieron sincronizar los favoritos. Inténtalo de nuevo.', authFailed:'No se pudo completar la solicitud. Revisa los datos e inténtalo de nuevo.', signedOut:'Sesión cerrada. Tus favoritos siguen guardados en este dispositivo.', cart:'Cotización', cartText:'Reúne productos y cantidades para solicitar una cotización.', cartEmpty:'Tu lista de cotización está vacía.', quantity:'Cantidad', remove:'Quitar', total:'Total de referencia', name:'Nombre', contactField:'Teléfono de contacto', locality:'Localidad (opcional)', delivery:'Entrega o retiro', chooseDelivery:'Selecciona una opción', homeDelivery:'Entrega a domicilio', pickup:'Retiro', payment:'Forma de pago', paymentInfo:'Pago por SINPE Móvil, coordinado al confirmar la cotización', send:'Solicitar cotización por WhatsApp', whatsappPending:'WhatsApp estará disponible próximamente.', quote:'Hola, quisiera solicitar una cotización de estos productos:', client:'Nombre', contactInfo:'Teléfono', localityInfo:'Localidad',
     notFound:'No encontramos esta página.', light:'Cambiar tema', language:'Cambiar idioma', showImage:'Mostrar imagen', videosLabel:'Videos', videosTitle:'Videos de Yazú', videosText:'Conozca más sobre Yazú y nuestras cadenas alimentarias sanas.', videoSoon:'Próximamente', galleryImage:'Imagen de la galería', mapTitle:'Mapa de San José, Costa Rica', skip:'Saltar al contenido', navigation:'Navegación principal', brandLabel:'YaZú, inicio', storageError:'No se pudieron guardar las preferencias en este navegador.',
   },
   en: {
-    home:'Home', products:'Products', about:'Our story', contact:'Contact', explore:'Explore', footerText:'Made with roots, care and community.', socials:'Social media', socialPending:'Link pending',
-    heroLabel:'NATURAL · HANDMADE · COSTA RICA', heroTitle:'Products with roots', heroText:'Discover carefully made products and the stories behind them.', shop:'Explore products', featured:'A selection for you', featuredText:'Little things that connect us to the earth.', all:'View all products', storyLabel:'MEET YAZÚ', storyTitle:'A community in bloom', storyText:'YaZú brings visibility to agroecological initiatives led by rural women in Costa Rica.', discover:'Learn more',
-    catalogLabel:'THE CATALOG', catalogTitle:'Find something special', catalogText:'Explore our selection of products.', search:'Search products', categories:'All categories', empty:'There are no products to show yet.', error:'We could not load the content. Please try again.', retry:'Try again', add:'Add to cart', added:'Added to your cart.', favorite:'Add to favorites', unfavorite:'Remove from favorites', back:'Back to products', description:'Description', noDescription:'', unavailable:'This product is not available.', image:'Product image',
-    infoLabel:'THE COLLECTIVE', infoTitle:'Stories that connect us', infoText:'Meet the initiatives and people who bring our community to life.', ventures:'Initiatives', services:'Services', map:'Map', gallery:'Gallery', ventureTitle:'An example initiative', ventureText:'This space shows how we can share an initiative’s story and link to its website.', pending:'More information is coming soon.', location:'Find us on the map', galleryEmpty:'Images of our community are coming soon.', write:'Get in touch', sinpe:'SINPE Móvil',
-    favorites:'Favorites', favoritesText:'Your saved products.', favoritesEmpty:'You have no favorites yet.', syncTitle:'Your favorites on other devices', syncOptional:'Optional · manual sync', syncText:'Your favorites are saved on this device. Create an account or sign in to sync them whenever you choose.', createAccount:'Create account', signIn:'Sign in', email:'Email address', password:'Password', createAccountAction:'Create account', signInAction:'Sign in', syncFavorites:'Sync favorites', signOut:'Sign out', signedInAs:'Signed in as', authWorking:'Working…', checkEmail:'Check your email to confirm the account.', signedUp:'Account created. You can now sync your favorites.', syncComplete:'Favorites synced.', syncFailed:'Favorites could not be synced. Please try again.', authFailed:'The request could not be completed. Check your details and try again.', signedOut:'Signed out. Your favorites are still saved on this device.', cart:'Your cart', cartText:'Gather your products to ask about availability.', cartEmpty:'Your cart is empty.', quantity:'Quantity', remove:'Remove', total:'Total', name:'Name', contactField:'Phone number or email', locality:'Locality', send:'Ask via WhatsApp', whatsappPending:'WhatsApp will be available soon.', quote:'Hello, I would like to ask about the availability of these products:', client:'Name', contactInfo:'Contact', localityInfo:'Locality',
+    home:'Home', products:'Products', about:'The story', contact:'Contact', explore:'Explore', footerText:'Made with roots, care and community.', socials:'Social media', socialPending:'Link pending',
+    heroLabel:'LANDSCAPING · KNOWLEDGE · FLAVORS · CARE', heroTitle:'Products with roots', heroText:'Discover carefully made products and the stories behind them.', shop:'Explore products', featured:'A selection for you', featuredText:'Little things that connect us to the earth.', all:'View all products', storyLabel:'MEET YAZÚ', storyTitle:'A community in bloom', storyText:'YaZú brings visibility to agroecological initiatives led by rural women in Costa Rica.', discover:'Learn more',
+    catalogLabel:'THE CATALOG', catalogTitle:'Find something special', catalogText:'Explore our selection of products.', search:'Search products', categories:'All categories', empty:'There are no products to show yet.', error:'We could not load the content. Please try again.', retry:'Try again', add:'Add to quote', added:'Added to your quote.', favorite:'Add to favorites', unfavorite:'Remove from favorites', back:'Back to products', description:'Description', noDescription:'', unavailable:'This product is not available.', image:'Product image',
+    infoLabel:'THE COLLECTIVE', infoTitle:'Stories that connect us', infoText:'Meet the initiatives and people who bring our community to life.', ventures:'Initiatives', services:'Services', map:'Map', gallery:'Gallery', galleryProducts:'Products and garden', galleryProductsTitle:'What we make and share', galleryCommunity:'The community', galleryCommunityTitle:'Stories from our community', galleryOpenProducts:'View full gallery', galleryCloseProducts:'Hide gallery', galleryOpenCommunity:'View community photos', galleryCloseCommunity:'Hide community photos', ventureTitle:'An example initiative', ventureText:'This space shows how we can share an initiative’s story and link to its website.', pending:'More information is coming soon.', location:'Find us on the map', galleryEmpty:'Images of our community are coming soon.', write:'Get in touch', sinpe:'SINPE Móvil',
+    favorites:'Favorites', favoritesText:'Your saved products.', favoritesEmpty:'You have no favorites yet.', syncTitle:'Your favorites on other devices', syncText:'Your favorites are saved on this device. Create an account or sign in to sync them whenever you choose.', createAccount:'Create account', signIn:'Sign in', email:'Email address', password:'Password', createAccountAction:'Create account', signInAction:'Sign in', syncFavorites:'Sync favorites', signOut:'Sign out', signedInAs:'Signed in as', authWorking:'Working…', checkEmail:'Check your email to confirm your account.', signedUp:'Account created. You can now sync your favorites.', syncComplete:'Favorites synced.', syncFailed:'Favorites could not be synced. Please try again.', authFailed:'The request could not be completed. Check your details and try again.', signedOut:'Signed out. Your favorites are still saved on this device.', cart:'Quote request', cartText:'Gather products and quantities to request a quote.', cartEmpty:'Your quote list is empty.', quantity:'Quantity', remove:'Remove', total:'Reference total', name:'Name', contactField:'Contact phone', locality:'Locality (optional)', delivery:'Delivery or pickup', chooseDelivery:'Choose an option', homeDelivery:'Home delivery', pickup:'Pickup', payment:'Payment method', paymentInfo:'SINPE Móvil payment, arranged after the quote is confirmed', send:'Request a quote via WhatsApp', whatsappPending:'WhatsApp will be available soon.', quote:'Hello, I would like to request a quote for these products:', client:'Name', contactInfo:'Phone', localityInfo:'Locality',
     notFound:'We could not find this page.', light:'Change theme', language:'Change language', showImage:'Show image', videosLabel:'Videos', videosTitle:'Yazú videos', videosText:'Learn more about Yazú and our healthy food chains.', videoSoon:'Coming soon', galleryImage:'Gallery image', mapTitle:'Map of San José, Costa Rica', skip:'Skip to content', navigation:'Main navigation', brandLabel:'YaZú, home', storageError:'Could not save your preferences in this browser.',
   }
 };
@@ -41,21 +41,61 @@ if (!cart || typeof cart !== 'object' || Array.isArray(cart)) cart = {};
 if (!Array.isArray(favorites)) favorites = [];
 let products = [];
 let gallery = [];
+const communityGallery = [
+  {file:'IMG_1780.JPG', alt:'Mujeres trabajando en la huerta comunitaria'},
+  {file:'IMG_1781.JPG', alt:'Actividad comunitaria en la huerta'},
+  {file:'26.10.22 Taller V GIGUP  (24).jpeg', alt:'Mujeres compartiendo en un taller comunitario'},
+  {file:'26.10.22 Taller V GIGUP  (27).jpeg', alt:'Participación de mujeres en un taller'},
+  {file:'20230715_111245.jpeg', alt:'Encuentro de la comunidad en la naturaleza'},
+  {file:'20260208_110027.jpeg', alt:'Paisaje de la comunidad y sus cultivos'}
+];
+const galleryCollection = [
+  {file:'1N3A2065.JPG', alt:'Productos artesanales de la colectiva'},
+  {file:'1N3A2078.JPG', alt:'Preparación de alimentos de la colectiva'},
+  {file:'1N3A2113.JPG', alt:'Productos y alimentos de la comunidad'},
+  {file:'1N3A2165.JPG', alt:'Salsas y conservas artesanales'},
+  {file:'IMG_7096.jpeg', alt:'Flores y plantas'},
+  {file:'IMG_7259.jpeg', alt:'Cosecha de la huerta'},
+  {file:'IMG_7262.jpeg', alt:'Detalle de la tierra y la cosecha'},
+  {file:'IMG_7674.jpeg', alt:'Flores y biodiversidad local'},
+  {file:'IMG_7692.jpeg', alt:'Productos naturales en preparación'}
+];
 let authUser = null;
 let authMode = 'signin';
 let authMessage = '';
-let favoritesSyncExpanded = false;
 let renderId = 0;
+let communityCarouselTimer;
 const t = key => messages[language][key] || key;
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const local = (item, key) => (language === 'en' && item[`${key}_en`]) || item[key] || '';
 const price = n => new Intl.NumberFormat(language === 'en' ? 'en-CR' : 'es-CR', {style:'currency', currency:'CRC', minimumFractionDigits:0, maximumFractionDigits:2}).format(Number(n) || 0);
 const totalPrice = items => items.reduce((sum,p)=>sum+Math.round(Number(p.precio)*100)*Number(cart[p.uuid]),0)/100;
-const imageUrl = url => {
-  try { const parsed = new URL(url, location.origin); return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : logo; }
+const imageUrl = (url, width = 1200, quality = 76, transform = true) => {
+  try {
+    const parsed = new URL(url, location.origin);
+    if (!['http:', 'https:'].includes(parsed.protocol)) return logo;
+    // Supabase Image Transformations resize original uploads at delivery time.
+    if (transform && parsed.hostname.endsWith('.supabase.co') && parsed.pathname.includes('/storage/v1/object/public/')) {
+      parsed.pathname = parsed.pathname.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/');
+      parsed.searchParams.set('width', String(width));
+      parsed.searchParams.set('quality', String(quality));
+    }
+    return parsed.href;
+  }
   catch { return logo; }
 };
-const productImage = item => imageUrl(item.imagenes?.[0] || logo);
+const staticImage = (path, widths = [800, 1600]) => {
+  const dot = path.lastIndexOf('.');
+  const base = path.slice(0, dot);
+  const extension = path.slice(dot);
+  const sources = widths.map(width => `${base}-${width}${extension} ${width}w`).join(', ');
+  return `src="${base}-${widths[0]}${extension}" srcset="${sources}, ${path} 1800w"`;
+};
+const galleryImage = (file, sizes = '(max-width: 540px) calc(100vw - 2rem), (max-width: 800px) 50vw, 33vw') => {
+  const path = `/assets/optimized/gallery/${file.replace(/\.[^.]+$/, '.webp')}`;
+  return `${staticImage(path, [480, 960])} sizes="${sizes}"`;
+};
+const productImage = (item, width = 480) => imageUrl(item.imagenes?.[0] || logo, width);
 const link = item => `/producto/${encodeURIComponent(item.slug)}`;
 let noticeTimer;
 function notify(text) {
@@ -125,7 +165,8 @@ function updateHeader() {
 }
 function card(item) {
   const saved = favorites.includes(item.uuid);
-  return `<article class="card"><div class="card-image"><a href="${link(item)}" data-link><img src="${esc(productImage(item))}" alt="${esc(local(item,'nombre'))}"></a><button type="button" class="favorite" data-favorite="${esc(item.uuid)}" aria-label="${esc(t(saved?'unfavorite':'favorite'))}" aria-pressed="${saved}">${saved?'♥':'♡'}</button></div><div class="card-body"><span class="category">${esc(local(item,'categoria'))}</span><h3><a href="${link(item)}" data-link>${esc(local(item,'nombre'))}</a></h3><span class="price">${price(item.precio)}</span></div></article>`;
+  const original = imageUrl(item.imagenes?.[0] || logo, 480, 76, false);
+  return `<article class="card"><div class="card-image"><a href="${link(item)}" data-link><img src="${esc(productImage(item))}" data-original="${esc(original)}" alt="${esc(local(item,'nombre'))}" loading="lazy" decoding="async"></a><button type="button" class="favorite" data-favorite="${esc(item.uuid)}" aria-label="${esc(t(saved?'unfavorite':'favorite'))}" aria-pressed="${saved}">${saved?'♥':'♡'}</button></div><div class="card-body"><span class="category">${esc(local(item,'categoria'))}</span><h3><a href="${link(item)}" data-link>${esc(local(item,'nombre'))}</a></h3><span class="price">${price(item.precio)}</span></div></article>`;
 }
 const cards = items => items.length ? `<div class="grid">${items.map(card).join('')}</div>` : `<div class="empty">${t('empty')}</div>`;
 const skeleton = () => `<div class="grid">${Array.from({length:4},()=>'<div class="skeleton"></div>').join('')}</div>`;
@@ -147,6 +188,7 @@ function heading(label, title, text) {
 }
 function renderHome() {
   main.innerHTML = `<section id="inicio" class="hero" data-nav-section="home"><div class="wrap hero-copy"><p class="eyebrow">${t('heroLabel')}</p><h1>${t('heroTitle')}</h1><p>${t('heroText')}</p><a class="button" href="/productos" data-link>${t('shop')} →</a></div></section><section id="catalogo" class="section fondo fondo-2" data-nav-section="products"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">${t('catalogLabel')}</p><h2>${t('featured')}</h2></div><p>${t('featuredText')}</p></div><div id="product-results">${skeleton()}</div><p><a class="button secondary" href="/productos" data-link>${t('all')} →</a></p></div></section>${infoSections(true)}`;
+  normalizeTapestry();
 }
 function renderCatalog() {
   main.innerHTML = `${heading('catalogLabel','catalogTitle','catalogText')}<section class="wrap section" style="padding-top:0"><div class="controls"><input class="field" id="search" type="search" placeholder="${t('search')}" aria-label="${t('search')}"><select class="field" id="category" aria-label="${t('categories')}"><option value="">${t('categories')}</option></select></div><div id="product-results">${skeleton()}</div></section>`;
@@ -168,31 +210,76 @@ function populateCategories() {
 function renderDetail(item) {
   if (!item) { main.innerHTML = `${heading('catalogLabel','notFound','unavailable')}<div class="wrap section"><a class="button" data-link href="/productos">${t('back')}</a></div>`; return; }
   const imgs = item.imagenes?.length ? item.imagenes : [logo];
-  main.innerHTML = `<div class="wrap"><a class="back" href="/productos" data-link>← ${t('back')}</a><section class="detail"><div><div class="detail-image"><img id="detail-image" src="${esc(imageUrl(imgs[0]))}" alt="${esc(local(item,'nombre'))}"></div>${imgs.length>1?`<div class="thumbs">${imgs.map((src,i)=>`<button data-image="${esc(imageUrl(src))}" aria-label="${t('showImage')} ${i+1}"><img src="${esc(imageUrl(src))}" alt=""></button>`).join('')}</div>`:''}</div><div><p class="eyebrow">${esc(local(item,'categoria'))}</p><h1>${esc(local(item,'nombre'))}</h1><p class="price">${price(item.precio)}</p><p>${esc(local(item,'descripcion'))}</p><div class="detail-actions"><button class="button" data-add="${esc(item.uuid)}">${t('add')}</button><button class="button secondary" data-favorite="${esc(item.uuid)}">${t(favorites.includes(item.uuid)?'unfavorite':'favorite')} ${favorites.includes(item.uuid)?'♥':'♡'}</button></div></div></section></div>`;
+  const detailOriginal = imageUrl(imgs[0], 1100, 76, false);
+  main.innerHTML = `<div class="wrap"><a class="back" href="/productos" data-link>← ${t('back')}</a><section class="detail"><div><div class="detail-image"><img id="detail-image" src="${esc(imageUrl(imgs[0], 1100))}" data-original="${esc(detailOriginal)}" alt="${esc(local(item,'nombre'))}" fetchpriority="high" decoding="async"></div>${imgs.length>1?`<div class="thumbs">${imgs.map((src,i)=>`<button data-image="${esc(imageUrl(src, 150))}" aria-label="${t('showImage')} ${i+1}"><img src="${esc(imageUrl(src, 150))}" alt="" loading="lazy" decoding="async"></button>`).join('')}</div>`:''}</div><div><p class="eyebrow">${esc(local(item,'categoria'))}</p><h1>${esc(local(item,'nombre'))}</h1><p class="price">${price(item.precio)}</p><p>${esc(local(item,'descripcion'))}</p><div class="detail-actions"><button class="button" data-add="${esc(item.uuid)}">${t('add')}</button><button class="button secondary" data-favorite="${esc(item.uuid)}">${t(favorites.includes(item.uuid)?'unfavorite':'favorite')} ${favorites.includes(item.uuid)?'♥':'♡'}</button></div></div></section></div>`;
   document.title = `${local(item,'nombre')} | YaZú`;
 }
 function videoSlot(id) {
   return id ? `<figure class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}" title="${t('videosTitle')}" loading="lazy" allowfullscreen></iframe></figure>` : `<figure class="video-frame video-soon"><div><img src="${logo}" alt=""><p>${t('videoSoon')}</p></div></figure>`;
 }
 function infoSections(includeIntro = false) {
-  const bg = includeIntro ? ' fondo fondo-2' : '';
   const intro = includeIntro ? `<section id="historia" class="section history-intro" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('infoLabel')}</p><h2>${t('infoTitle')}</h2><p>${t('infoText')}</p></div></section>` : '';
-  return `${intro}<div class="wrap info-nav"><a href="#emprendimientos">${t('ventures')}</a><a href="#servicios">${t('services')}</a><a href="#mapa">${t('map')}</a><a href="#galeria">${t('gallery')}</a>  <a href="#contacto">${t('contact')}</a></div><section id="videos" class="section${bg}" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('videosLabel')}</p><h2>${t('videosTitle')}</h2><p class="muted">${t('videosText')}</p><div class="video-grid"><figure class="video-frame"><video controls preload="metadata" playsinline src="/assets/videos/chaperno.mp4" title="${t('videosTitle')}"></video></figure>${videoSlot(config.youtube?.[0])}${videoSlot(config.youtube?.[1])}</div></div></section><section id="emprendimientos" class="section fondo fondo-1" data-nav-section="history"><div class="wrap feature"><img class="feature-photo" src="/assets/decorativas/foto-1.jpg" alt=""><div><p class="eyebrow">${t('ventures')}</p><h2>${t('ventureTitle')}</h2><p>${t('ventureText')}</p></div></div></section><section id="servicios" class="section${bg}" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('services')}</p><h2>${t('services')}</h2><p>${t('pending')}</p></div></section><section id="mapa" class="section soft" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('map')}</p><h2>${t('location')}</h2><iframe class="map" title="${t('mapTitle')}" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.12%2C9.90%2C-84.06%2C9.96&amp;layer=mapnik&amp;marker=9.9281%2C-84.0907"></iframe><p><a href="https://www.openstreetmap.org/?mlat=9.9281&amp;mlon=-84.0907#map=13/9.9281/-84.0907" target="_blank" rel="noopener noreferrer">OpenStreetMap ↗</a></p></div></section><section id="galeria" class="section${bg}" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('gallery')}</p><h2>${t('gallery')}</h2><div class="photo-strip"><img src="/assets/decorativas/foto-2.jpg" alt=""><img src="/assets/decorativas/foto-3.jpg" alt=""></div><div id="gallery-results">${skeleton()}</div></div></section><section id="contacto" class="section fondo fondo-3" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('contact')}</p><h2>${t('write')}</h2><p><a href="mailto:ecomonzu@gmail.com">ecomonzu@gmail.com</a></p><p><a href="https://www.instagram.com/chapernoagroeco/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>${config.facebook ? ` · <a href="${esc(imageUrl(config.facebook))}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>` : ''}</p>${config.sinpe ? `<p>${t('sinpe')}: ${esc(config.sinpe)}</p>` : ''}</div></section>`;
+  return `${intro}<div class="wrap info-nav"><a href="#emprendimientos">${t('ventures')}</a><a href="#servicios">${t('services')}</a><a href="#mapa">${t('map')}</a><a href="#galeria">${t('gallery')}</a>  <a href="#contacto">${t('contact')}</a></div><section id="videos" class="section fondo fondo-2" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('videosLabel')}</p><h2>${t('videosTitle')}</h2><p class="muted">${t('videosText')}</p><div class="video-grid"><figure class="video-frame"><video controls preload="metadata" playsinline src="/assets/videos/chaperno.mp4" title="${t('videosTitle')}"></video></figure>${videoSlot(config.youtube?.[0])}${videoSlot(config.youtube?.[1])}</div></div></section><section id="emprendimientos" class="section fondo fondo-1" data-nav-section="history"><div class="wrap feature"><img class="feature-photo" src="/assets/optimized/decorativas/foto-1.webp" alt="" loading="lazy" decoding="async"><div><p class="eyebrow">${t('ventures')}</p><h2>${t('ventureTitle')}</h2><p>${t('ventureText')}</p></div></div></section><section id="servicios" class="section fondo fondo-2" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('services')}</p><h2>${t('services')}</h2><p>${t('pending')}</p></div></section><section id="mapa" class="section soft" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('map')}</p><h2>${t('location')}</h2><iframe class="map" title="${t('mapTitle')}" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.1746111%2C9.8661389%2C-84.1146111%2C9.9261389&amp;layer=mapnik&amp;marker=9.8961389%2C-84.1446111"></iframe><p><a href="https://www.openstreetmap.org/?mlat=9.8961389&amp;mlon=-84.1446111#map=13/9.8961389/-84.1446111" target="_blank" rel="noopener noreferrer">OpenStreetMap ↗</a></p></div></section><section id="galeria" class="section fondo fondo-2" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('gallery')}</p><h2>${t('gallery')}</h2><div class="photo-strip"><img src="/assets/optimized/decorativas/foto-2.webp" alt="" loading="lazy" decoding="async"><img src="/assets/optimized/decorativas/foto-3.webp" alt="" loading="lazy" decoding="async"></div><div id="gallery-results"></div></div></section><section id="contacto" class="section fondo fondo-3" data-nav-section="history"><div class="wrap"><p class="eyebrow">${t('contact')}</p><h2>${t('write')}</h2><p><a href="mailto:ecomonzu@gmail.com">ecomonzu@gmail.com</a></p><p><a href="https://www.instagram.com/chapernoagroeco/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>${config.facebook ? ` · <a href="${esc(imageUrl(config.facebook))}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>` : ''}</p>${config.sinpe ? `<p>${t('sinpe')}: ${esc(config.sinpe)}</p>` : ''}</div></section>`;
+}
+function normalizeTapestry() {
+  const venture = document.querySelector('#emprendimientos');
+  const services = document.querySelector('#servicios');
+  if (!venture || !services || venture.parentElement?.classList.contains('tapestry')) return;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'tapestry';
+  venture.before(wrapper);
+  wrapper.append(venture, services);
 }
 function renderInfo() {
   main.innerHTML = `${heading('infoLabel','infoTitle','infoText')}${infoSections()}`;
+  normalizeTapestry();
   main.querySelector('.catalog-head').classList.add('history-page-heading');
 }
 function renderGallery() {
   const target = document.querySelector('#gallery-results');
   if (!target) return;
-  target.innerHTML = gallery.length ? `<div class="gallery-grid">${gallery.map(item=>`<figure><img src="${esc(imageUrl(item.imagen_url))}" alt="${esc(item.titulo || t('galleryImage'))}"><figcaption>${esc(item.titulo || '')}</figcaption></figure>`).join('')}</div>` : `<div class="placeholder"><div><img src="${logo}" alt=""><p>${t('galleryEmpty')}</p></div></div>`;
+  const galleryItems = galleryCollection.map(item => `<figure><img ${galleryImage(item.file)} alt="${esc(item.alt)}" loading="lazy" decoding="async"><figcaption>${esc(item.alt)}</figcaption></figure>`).join('');
+  const slides = communityGallery.map((item, index) => `<figure class="community-slide${index === 0 ? ' is-active' : ''}" data-community-slide="${index}" aria-hidden="${index === 0 ? 'false' : 'true'}"><img ${galleryImage(item.file, '(max-width: 800px) calc(100vw - 2rem), 800px')} alt="${esc(item.alt)}" loading="lazy" decoding="async"><figcaption>${esc(item.alt)}</figcaption></figure>`).join('');
+  const dots = communityGallery.map((item, index) => `<button type="button" class="community-dot${index === 0 ? ' is-active' : ''}" data-community-dot="${index}" aria-label="${esc(t('galleryImage'))} ${index + 1}" aria-pressed="${index === 0}"></button>`).join('');
+  target.innerHTML = `<div class="gallery-expanders"><button type="button" class="button secondary" data-gallery-toggle="collection" aria-expanded="false" aria-controls="gallery-collection-panel" data-open-label="${esc(t('galleryOpenProducts'))}" data-close-label="${esc(t('galleryCloseProducts'))}">${esc(t('galleryOpenProducts'))}</button></div><section class="gallery-collection gallery-panel" id="gallery-collection-panel" data-gallery-panel="collection" hidden aria-labelledby="gallery-collection-title"><div class="gallery-subheading"><p class="eyebrow">${esc(t('galleryProducts'))}</p><h3 id="gallery-collection-title">${esc(t('galleryProductsTitle'))}</h3></div><div class="gallery-grid">${galleryItems}</div></section><section class="community-gallery"><div class="gallery-subheading"><p class="eyebrow">${esc(t('galleryCommunity'))}</p><h3 id="community-gallery-title">${esc(t('galleryCommunityTitle'))}</h3></div><div class="community-carousel" data-community-carousel aria-label="${esc(t('galleryCommunity'))}" aria-roledescription="carousel"><div class="community-carousel-stage">${slides}</div><button type="button" class="community-carousel-control community-carousel-prev" data-community-prev aria-label="Anterior">‹</button><button type="button" class="community-carousel-control community-carousel-next" data-community-next aria-label="Siguiente">›</button><div class="community-carousel-dots" role="group" aria-label="${esc(t('galleryCommunity'))}">${dots}</div></div></section>`;
+  initializeCommunityCarousel();
+}
+function initializeCommunityCarousel() {
+  clearInterval(communityCarouselTimer);
+  const carousel = document.querySelector('[data-community-carousel]');
+  if (!carousel) return;
+  const slides = [...carousel.querySelectorAll('[data-community-slide]')];
+  const dots = [...carousel.querySelectorAll('[data-community-dot]')];
+  let current = 0;
+  const show = index => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      const active = i === current;
+      slide.classList.toggle('is-active', active);
+      slide.setAttribute('aria-hidden', String(!active));
+    });
+    dots.forEach((dot, i) => {
+      const active = i === current;
+      dot.classList.toggle('is-active', active);
+      dot.setAttribute('aria-pressed', String(active));
+    });
+  };
+  const start = () => {
+    clearInterval(communityCarouselTimer);
+    communityCarouselTimer = setInterval(() => show(current + 1), 5000);
+  };
+  carousel.querySelector('[data-community-prev]').addEventListener('click', () => { show(current - 1); start(); });
+  carousel.querySelector('[data-community-next]').addEventListener('click', () => { show(current + 1); start(); });
+  dots.forEach((dot, index) => dot.addEventListener('click', () => { show(index); start(); }));
+  carousel.addEventListener('mouseenter', () => clearInterval(communityCarouselTimer));
+  carousel.addEventListener('mouseleave', start);
+  carousel.addEventListener('focusin', () => clearInterval(communityCarouselTimer));
+  carousel.addEventListener('focusout', event => { if (!carousel.contains(event.relatedTarget)) start(); });
+  start();
 }
 function favoritesSyncPanel() {
-  const accountContent = authUser
-    ? `<div><h2>${t('syncTitle')}</h2><p>${t('signedInAs')} <strong>${esc(authUser.email || '')}</strong></p></div><div class="favorite-sync-actions"><button class="button" type="button" data-favorites-sync>${t('syncFavorites')}</button><button class="button secondary" type="button" data-auth-signout>${t('signOut')}</button></div><p class="favorite-sync-message" id="favorite-sync-message" role="status">${esc(authMessage)}</p>`
-    : `<div><h2>${t('syncTitle')}</h2><p>${t('syncText')}</p></div><div class="auth-mode" role="group" aria-label="${t('syncTitle')}"><button type="button" data-auth-mode="signup" aria-pressed="${authMode === 'signup'}">${t('createAccount')}</button><button type="button" data-auth-mode="signin" aria-pressed="${authMode === 'signin'}">${t('signIn')}</button></div><form class="favorite-auth-form" id="favorite-auth-form"><label>${t('email')}<input class="field" type="email" name="email" autocomplete="email" required maxlength="254"></label><label>${t('password')}<input class="field" type="password" name="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" required minlength="6"></label><button class="button" type="submit">${t(authMode === 'signup' ? 'createAccountAction' : 'signInAction')}</button><p class="favorite-sync-message" id="favorite-sync-message" role="status">${esc(authMessage)}</p></form>`;
-  return `<details class="favorite-sync" data-favorites-sync-panel ${favoritesSyncExpanded ? 'open' : ''}><summary class="favorite-sync-toggle"><span class="favorite-sync-prompt"><span>${t('syncTitle')}</span><span class="favorite-sync-optional">${t('syncOptional')}</span></span><span class="favorite-sync-cta">${authUser ? t('syncFavorites') : `${t('signIn')} / ${t('createAccount')}`}</span></summary><div class="favorite-sync-content">${accountContent}</div></details>`;
+  if (authUser) return `<section class="favorite-sync" aria-labelledby="favorite-sync-title"><div><h2 id="favorite-sync-title">${t('syncTitle')}</h2><p>${t('signedInAs')} <strong>${esc(authUser.email || '')}</strong></p></div><div class="favorite-sync-actions"><button class="button" type="button" data-favorites-sync>${t('syncFavorites')}</button><button class="button secondary" type="button" data-auth-signout>${t('signOut')}</button></div><p class="favorite-sync-message" id="favorite-sync-message" role="status">${esc(authMessage)}</p></section>`;
+  return `<section class="favorite-sync" aria-labelledby="favorite-sync-title"><div><h2 id="favorite-sync-title">${t('syncTitle')}</h2><p>${t('syncText')}</p></div><div class="auth-mode" role="group" aria-label="${t('syncTitle')}"><button type="button" data-auth-mode="signup" aria-pressed="${authMode === 'signup'}">${t('createAccount')}</button><button type="button" data-auth-mode="signin" aria-pressed="${authMode === 'signin'}">${t('signIn')}</button></div><form class="favorite-auth-form" id="favorite-auth-form"><label>${t('email')}<input class="field" type="email" name="email" autocomplete="email" required maxlength="254"></label><label>${t('password')}<input class="field" type="password" name="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" required minlength="6"></label><button class="button" type="submit">${t(authMode === 'signup' ? 'createAccountAction' : 'signInAction')}</button><p class="favorite-sync-message" id="favorite-sync-message" role="status">${esc(authMessage)}</p></form></section>`;
 }
 function renderList(kind) {
   const isCart = kind === 'cart';
@@ -200,11 +287,7 @@ function renderList(kind) {
   const rows = items.map(p => `<article class="list-item"><a href="${link(p)}" data-link><img src="${esc(productImage(p))}" alt="${esc(local(p,'nombre'))}"></a><div><h3><a href="${link(p)}" data-link>${esc(local(p,'nombre'))}</a></h3><span class="price">${price(p.precio)}</span></div><div class="list-actions">${isCart?`<label class="quantity">${t('quantity')} <input class="field" type="number" min="1" max="999" value="${Number(cart[p.uuid])}" data-quantity="${esc(p.uuid)}"></label><button class="text-button" data-remove="${esc(p.uuid)}">${t('remove')}</button>`:`<button class="text-button" data-favorite="${esc(p.uuid)}">${t('unfavorite')}</button>`}</div></article>`).join('');
   const total = totalPrice(items);
   const enabled = /^\d{8,15}$/.test(config.whatsapp);
-  const listMarkup = `<div class="list">${rows || `<div class="empty">${t(isCart?'cartEmpty':'favoritesEmpty')}</div>`}</div>`;
-  const checkoutMarkup = isCart && items.length ? `<form class="summary" id="checkout"><div class="total"><strong>${t('total')}</strong><strong>${price(total)}</strong></div><label>${t('name')}<input class="field" name="name" required maxlength="120"></label><label>${t('contactField')}<input class="field" name="contact" required maxlength="150"></label><label>${t('locality')}<input class="field" name="locality" required maxlength="150"></label><button class="button" type="submit" ${enabled?'':'disabled'}>${t('send')}</button>${enabled?'':`<p class="muted">${t('whatsappPending')}</p>`}</form>` : '';
-  main.innerHTML = `${heading('catalogLabel',isCart?'cart':'favorites',isCart?'cartText':'favoritesText')}<div class="wrap section" style="padding-top:0"><div class="${isCart && items.length?'checkout':''}">${listMarkup}${checkoutMarkup}</div>${isCart?'':favoritesSyncPanel()}</div>`;
-  const syncPanel = main.querySelector('[data-favorites-sync-panel]');
-  syncPanel?.addEventListener('toggle', () => { favoritesSyncExpanded = syncPanel.open; });
+  main.innerHTML = `${heading('catalogLabel',isCart?'cart':'favorites',isCart?'cartText':'favoritesText')}<div class="wrap section" style="padding-top:0">${isCart?'':favoritesSyncPanel()}<div class="${isCart && items.length?'checkout':''}"><div class="list">${rows || `<div class="empty">${t(isCart?'cartEmpty':'favoritesEmpty')}</div>`}</div>${isCart && items.length?`<form class="summary" id="checkout"><div class="total"><strong>${t('total')}</strong><strong>${price(total)}</strong></div><label>${t('name')}<input class="field" name="name" required maxlength="120"></label><label>${t('contactField')}<input class="field" type="tel" name="contact" autocomplete="tel" required maxlength="30"></label><label>${t('locality')}<input class="field" name="locality" maxlength="150"></label><label>${t('delivery')}<select class="field" name="delivery" required><option value="">${t('chooseDelivery')}</option><option value="delivery">${t('homeDelivery')}</option><option value="pickup">${t('pickup')}</option></select></label><p class="quote-payment">${t('paymentInfo')}: ${esc(config.sinpe)}</p><button class="button" type="submit" ${enabled?'':'disabled'}>${t('send')}</button>${enabled?'':`<p class="muted">${t('whatsappPending')}</p>`}</form>`:''}</div></div>`;
 }
 function readSyncedFavorites(userId) {
   const state = storage.get('favoritesSyncState', {});
@@ -275,7 +358,7 @@ async function render() {
     renderInfo();
     observeNavigationSections();
     try { await loadGallery(); if (id === renderId) renderGallery(); }
-    catch (error) { console.error('Error al cargar galería:', error); if (id === renderId) document.querySelector('#gallery-results').innerHTML = errorBox(); }
+    catch (error) { console.error('Error al cargar galería:', error); if (id === renderId) renderGallery(); }
     scrollToCurrentHash();
     return;
   }
@@ -284,7 +367,7 @@ async function render() {
     observeNavigationSections();
     loadGallery().then(() => { if (id === renderId) renderGallery(); }).catch(error => {
       console.error('Error al cargar galería:', error);
-      if (id === renderId) document.querySelector('#gallery-results').innerHTML = errorBox();
+      if (id === renderId) renderGallery();
     });
   }
   else if (path === '/productos') renderCatalog();
@@ -355,6 +438,16 @@ document.addEventListener('click', event => {
   const image = event.target.closest('[data-image]');
   if (image) document.querySelector('#detail-image').src = image.dataset.image;
   if (event.target.closest('[data-retry]')) render();
+  const galleryToggle = event.target.closest('[data-gallery-toggle]');
+  if (galleryToggle) {
+    const panel = document.querySelector(`[data-gallery-panel="${galleryToggle.dataset.galleryToggle}"]`);
+    if (panel) {
+      const expanded = galleryToggle.getAttribute('aria-expanded') === 'true';
+      panel.hidden = expanded;
+      galleryToggle.setAttribute('aria-expanded', String(!expanded));
+      galleryToggle.textContent = expanded ? galleryToggle.dataset.openLabel : galleryToggle.dataset.closeLabel;
+    }
+  }
 });
 document.addEventListener('input', event => {
   if (event.target.id === 'search') updateCatalog();
@@ -393,7 +486,7 @@ document.addEventListener('submit', event => {
   if (event.target.id !== 'checkout') return;
   event.preventDefault();
   if (!/^\d{8,15}$/.test(config.whatsapp)) { notify(t('whatsappPending')); return; }
-  for (const input of event.target.querySelectorAll('input[required]')) {
+  for (const input of event.target.querySelectorAll('input[required], select[required]')) {
     input.setCustomValidity(input.value.trim() ? '' : (language === 'es' ? 'Completa este campo.' : 'Please complete this field.'));
     if (!input.reportValidity()) return;
   }
@@ -401,10 +494,16 @@ document.addEventListener('submit', event => {
   const items = products.filter(p=>Number(cart[p.uuid]) > 0);
   const lines = items.map(p=>`- ${local(p,'nombre')} × ${cart[p.uuid]} (${price(Number(p.precio)*Number(cart[p.uuid]))})`);
   const total = totalPrice(items);
-  const message = [t('quote'),...lines,`${t('total')}: ${price(total)}`,`${t('client')}: ${String(form.get('name')).trim()}`,`${t('contactInfo')}: ${String(form.get('contact')).trim()}`,`${t('localityInfo')}: ${String(form.get('locality')).trim()}`,...(config.sinpe ? [`${t('sinpe')}: ${config.sinpe}`] : [])].join('\n');
+  const delivery = String(form.get('delivery'));
+  const message = [t('quote'),...lines,`${t('total')}: ${price(total)}`,`${t('client')}: ${String(form.get('name')).trim()}`,`${t('contactInfo')}: ${String(form.get('contact')).trim()}`,`${t('delivery')}: ${t(delivery === 'delivery' ? 'homeDelivery' : 'pickup')}`,...(String(form.get('locality')).trim() ? [`${t('localityInfo')}: ${String(form.get('locality')).trim()}`] : []),`${t('payment')}: ${t('sinpe')} (${config.sinpe})`].join('\n');
   window.open(`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
 });
-document.addEventListener('error', event => { if (event.target instanceof HTMLImageElement && !event.target.src.endsWith(logo)) event.target.src = logo; }, true);
+document.addEventListener('error', event => {
+  if (!(event.target instanceof HTMLImageElement) || event.target.src.endsWith(logo)) return;
+  const fallback = event.target.dataset.original;
+  if (fallback && event.target.src !== fallback) { event.target.src = fallback; return; }
+  event.target.src = logo;
+}, true);
 document.querySelector('#language').addEventListener('click', () => { language = language === 'es' ? 'en' : 'es'; storage.set('language',language); render(); });
 document.querySelector('#theme').addEventListener('click', () => { theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; storage.set('theme',theme); setTheme(); });
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (!theme) setTheme(); });

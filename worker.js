@@ -126,7 +126,12 @@ export default {
       if (url.pathname.startsWith('/api/admin/')) return await adminRoutes(request,env,url);
       if (request.method !== 'GET' && request.method !== 'HEAD') return new Response('Método no permitido.',{status:405});
       if (url.pathname === '/admin/admin' || url.pathname === '/admin/admin/' || !url.pathname.includes('.')) return await page(request,env,url);
-      return withHeaders(await env.ASSETS.fetch(request));
+      const asset = await env.ASSETS.fetch(request);
+      const response = withHeaders(asset);
+      if (asset.ok && /^\/assets\//.test(url.pathname)) {
+        response.headers.set('Cache-Control','public, max-age=31536000, immutable');
+      }
+      return response;
     } catch (error) {
       console.error('Error en Worker:',error);
       if (url.pathname.startsWith('/api/')) return json({error:error.message || 'Error del servidor.'},500);

@@ -14,16 +14,43 @@ const files = [
   [['Guía','admin','admin.js'], ['admin','admin.js']],
   [['assets','logo_yazu.svg'], ['assets','logo_yazu.svg']],
   [['assets','logo_yazu.png'], ['assets','logo_yazu.png']],
-  [['assets','decorativas','inicio.jpg'], ['assets','decorativas','inicio.jpg']],
-  [['assets','decorativas','foto-1.jpg'], ['assets','decorativas','foto-1.jpg']],
-  [['assets','decorativas','foto-2.jpg'], ['assets','decorativas','foto-2.jpg']],
-  [['assets','decorativas','foto-3.jpg'], ['assets','decorativas','foto-3.jpg']],
-  [['assets','fondos','fondo-1.png'], ['assets','fondos','fondo-1.png']],
-  [['assets','fondos','fondo-2.png'], ['assets','fondos','fondo-2.png']],
-  [['assets','fondos','fondo-3.png'], ['assets','fondos','fondo-3.png']],
-  [['assets','fondos','header.jpg'], ['assets','fondos','header.jpg']],
+  [['assets','optimized','decorativas','inicio.webp'], ['assets','optimized','decorativas','inicio.webp']],
+  [['assets','optimized','decorativas','foto-1.webp'], ['assets','optimized','decorativas','foto-1.webp']],
+  [['assets','optimized','decorativas','foto-2.webp'], ['assets','optimized','decorativas','foto-2.webp']],
+  [['assets','optimized','decorativas','foto-3.webp'], ['assets','optimized','decorativas','foto-3.webp']],
+  [['assets','optimized','gallery','IMG_1780.webp'], ['assets','optimized','gallery','IMG_1780.webp']],
+  [['assets','optimized','gallery','IMG_1781.webp'], ['assets','optimized','gallery','IMG_1781.webp']],
+  [['assets','optimized','gallery','26.10.22 Taller V GIGUP  (24).webp'], ['assets','optimized','gallery','26.10.22 Taller V GIGUP  (24).webp']],
+  [['assets','optimized','gallery','26.10.22 Taller V GIGUP  (27).webp'], ['assets','optimized','gallery','26.10.22 Taller V GIGUP  (27).webp']],
+  [['assets','optimized','gallery','20230715_111245.webp'], ['assets','optimized','gallery','20230715_111245.webp']],
+  [['assets','optimized','gallery','20260208_110027.webp'], ['assets','optimized','gallery','20260208_110027.webp']],
+  [['assets','optimized','gallery','1N3A2065.webp'], ['assets','optimized','gallery','1N3A2065.webp']],
+  [['assets','optimized','gallery','1N3A2113.webp'], ['assets','optimized','gallery','1N3A2113.webp']],
+  [['assets','optimized','gallery','IMG_7096.webp'], ['assets','optimized','gallery','IMG_7096.webp']],
+  [['assets','optimized','gallery','IMG_7259.webp'], ['assets','optimized','gallery','IMG_7259.webp']],
+  [['assets','optimized','gallery','IMG_7674.webp'], ['assets','optimized','gallery','IMG_7674.webp']],
+  [['assets','optimized','gallery','1N3A2078.webp'], ['assets','optimized','gallery','1N3A2078.webp']],
+  [['assets','optimized','gallery','1N3A2165.webp'], ['assets','optimized','gallery','1N3A2165.webp']],
+  [['assets','optimized','gallery','IMG_7262.webp'], ['assets','optimized','gallery','IMG_7262.webp']],
+  [['assets','optimized','gallery','IMG_7692.webp'], ['assets','optimized','gallery','IMG_7692.webp']],
+  [['assets','optimized','fondos','fondo-1.webp'], ['assets','optimized','fondos','fondo-1.webp']],
+  [['assets','optimized','fondos','fondo-2.webp'], ['assets','optimized','fondos','fondo-2.webp']],
+  [['assets','optimized','fondos','fondo-3.webp'], ['assets','optimized','fondos','fondo-3.webp']],
   [['assets','videos','chaperno.mp4'], ['assets','videos','chaperno.mp4']],
 ];
+async function collectOptimized(relative = 'assets/optimized') {
+  const found = [];
+  for (const entry of await readdir(path.join(root, relative), {withFileTypes:true})) {
+    const name = path.join(relative, entry.name);
+    if (entry.isDirectory()) found.push(...await collectOptimized(name));
+    else if (entry.isFile()) found.push(name);
+  }
+  return found;
+}
+for (const relative of await collectOptimized()) {
+  const parts = relative.split(path.sep);
+  files.push([parts, parts]);
+}
 const allowed = new Set(files.map(([, destination]) => path.join(...destination)));
 await mkdir(output, {recursive:true});
 async function checkOutput(relative = '') {
