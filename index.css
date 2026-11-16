@@ -81,7 +81,7 @@ h1,h2,h3{letter-spacing:0}
 .fondo-1{background-image:linear-gradient(color-mix(in srgb,var(--bg) 66%,transparent),color-mix(in srgb,var(--bg) 66%,transparent)),url("/assets/optimized/fondos/fondo-1.webp")}
 .fondo-2{background-image:linear-gradient(color-mix(in srgb,var(--bg) 66%,transparent),color-mix(in srgb,var(--bg) 66%,transparent)),url("/assets/optimized/fondos/fondo-2.webp")}
 :root[data-theme=dark] .fondo-2{background-image:none}
-:root:not([data-theme=dark]) .header{background-image:linear-gradient(color-mix(in srgb,var(--bg) 80%,transparent),color-mix(in srgb,var(--bg) 80%,transparent)),url("/assets/optimized/fondos/header.webp");background-size:cover;background-position:center}
+:root:not([data-theme=dark]) .header{background-color:transparent;background-image:linear-gradient(color-mix(in srgb,var(--bg) 35%,transparent),color-mix(in srgb,var(--bg) 35%,transparent)),url("/assets/optimized/fondos/header.webp");background-size:cover;background-position:center}
 
 /* Use one continuous tapestry behind the initiative and services sections. */
 .tapestry{
