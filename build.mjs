@@ -21,6 +21,7 @@ const files = [
   [['assets','fondos','fondo-1.png'], ['assets','fondos','fondo-1.png']],
   [['assets','fondos','fondo-2.png'], ['assets','fondos','fondo-2.png']],
   [['assets','fondos','fondo-3.png'], ['assets','fondos','fondo-3.png']],
+  [['assets','fondos','header.jpg'], ['assets','fondos','header.jpg']],
   [['assets','videos','chaperno.mp4'], ['assets','videos','chaperno.mp4']],
 ];
 const allowed = new Set(files.map(([, destination]) => path.join(...destination)));
